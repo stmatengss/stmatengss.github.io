@@ -1,0 +1,217 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0044)http://mrdoob.com/lab/javascript/checkboxes/ -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		 
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<title>checkboxes</title> 
+		<style> 
+			body
+			{
+				background-color: #ffffff;
+				margin: 0px;
+				overflow: hidden;
+			}
+			#main
+			{
+				height:700px;
+				width:1000px;
+			}
+			#dd
+			{
+				margin-left:200px;
+			}
+			#main,#headtxt,#dd,#d1,#d2,#d3,#d4,#d5
+			{
+				margin:0px auto;
+			}
+			#headtxt
+			{
+				margin: 100px 0px;
+				text-align: center;
+				font-weight:bold;
+				font-size: 60px;
+			}
+			#d2,#d4,#d5
+			{
+				margin-top:60px;
+				height:200px;
+				font-weight:bold;
+				font-size: 60px;
+			}
+			#d1,#d2,#d3,#d4,#d5
+			{
+				float:left;
+				margin:0px auto;
+				text-align: center;
+			}
+			#d1
+			{
+				margin-left:160px;
+			}
+			#img1
+			{
+				
+			}
+			#img2
+			{
+				
+			}
+			#d4
+			{
+				
+			}
+			#d5
+			{
+				
+			}
+			#res
+			{
+				
+			}
+			#headtxt,#p1,#p2,#res
+			{
+				font-family:"Noto Sans CJK SC", "Source Han Sans CN";
+			}
+		</style> 
+	<script type="text/javascript" async="" src="ga.js"></script></head>	
+	<body>
+		<div id="main">
+			<div id="headtxt">
+				WHAT IS YOUR BRAND NAME?
+			</div>
+			<div id="dd">
+				<div id="d1"><img id="img1" ></div>
+				<div id="d2"><p id="p1"></p></div>
+				<div id="d3"><img id="img2" ></div>
+				<div id="d4"><p id="p2"></p></div>
+				<div id="d5"><p id="res"></p></div>
+			</div>
+		</div>
+		<!-- <script src="Main.js"></script>  -->
+	
+ 	<script>
+ 		var disTime=1000;
+ 		var i=0;
+ 		var j=0;
+ 		var img1=document.getElementById("img1");
+ 		var img2=document.getElementById("img2");
+ 		var res=document.getElementById("res");
+ 		var d2=document.getElementById("p1");
+        var d4=document.getElementById("p2");
+		
+		var out=new Array();
+		out[0]="A";
+		out[1]="B";
+		out[2]="C";
+		out[3]="D";
+		out[4]="E";
+		out[5]="F";
+		out[6]="G";
+		out[7]="H";
+		out[8]="I";
+		out[9]="J";
+		out[10]="毛毛虫 巴士";
+		out[11]="甲壳虫 汉堡";
+		out[12]="冲浪 汽车";
+		out[13]="蚂蚁 直升机";
+		out[14]="乌龟 计程车";
+		out[15]="刨冰 消防车";
+		out[16]="面包 救护车";
+		out[17]="逃跑 面包车";
+		out[18]="八爪鱼 缆车";
+		out[19]="鳄鱼 老虎机";
+		out[20]="薯条 拉拉队";
+		out[21]="猫咪 棒棒糖";
+		out[22]="眼睛 入场券";
+		out[23]="向日葵 灯泡";
+		out[24]="熊猫 寿司";
+		out[25]="企鹅 礼帽";
+		out[26]="雾气 左轮枪";
+		out[27]="棕榈树 炸弹";
+		out[28]="青蛙 喇叭";
+		out[29]="干杯 胶囊";
+		out[30]="西瓜 网球衫";
+		out[31]="香蕉 麦克风";
+		out[32]="放松 枫叶";
+		out[33]="闭眼 派对";
+		out[34]="舌头 放大镜";
+		out[35]="冰淇淋 美甲";
+		out[36]="燃料 注射";
+		out[37]="哈哈 望远镜";
+		out[38]="肉丸 气球";
+		out[39]="呆然 路人";
+		out[40]="无口 理发";
+		out[41]="南瓜 居酒屋";
+		out[42]="仓鼠 显微镜";
+		out[43]="面包圈 花洒";
+		out[44]="凤梨 高尔夫";
+		out[45]="命中 蓝心";
+		out[46]="鬼脸 圣诞树";
+		out[47]="晕眩 警示";
+		out[48]="缎带 口红";
+		out[49]="碰撞 啤酒";
+		out[50]="花洒 奶瓶";
+		out[51]="番茄 嘴巴";
+		out[52]="恐怖 热带鱼";
+		out[53]="傻笑 蘑菇";
+		out[54]="鬼脸 仙人掌";
+		out[55]="雪饼 钻戒";
+		out[56]="曲奇 便当";
+		out[57]="糖果 皇冠";
+		out[58]="金发 恶魔";
+		out[59]="甜筒 浴缸";
+		out[60]="失恋 情书";
+		out[61]="单人 发廊";
+		out[62]="鲸鱼 面具";
+		out[63]="焰火 山地车";
+		out[64]="哭泣 火锅";
+		out[65]="巧克力 公主";
+		out[66]="草莓 天使";
+		out[67]="苹果 沙漏";
+		out[68]="蜜蜂 披萨";
+		out[69]="犯困 不可";
+		out[70]="番薯 拖拉机";
+		out[71]="汗水 电池";
+		out[72]="樱桃 糖果球";
+		out[73]="布丁 平底锅";
+		out[74]="蛋糕 骷髅头";
+		out[75]="加密 口罩";
+		out[76]="抹茶 衬衫";
+		out[77]="闪亮 仙女棒";
+		out[78]="纸牌 兄弟";
+		out[79]="松树 松树";
+		out[80]="甜瓜 心跳";
+		out[81]="满月 扑克牌";
+		out[82]="气愤 警车";
+		out[83]="鸡腿 饭团";
+		out[84]="耳机 拉面";
+		out[85]="拳头 恶鬼";
+		out[86]="红酒 墨镜";
+		out[87]="钻石 耳朵";
+		out[88]="咖啡 天妇罗";
+		out[89]="果汁 餐厅";
+		out[90]="飞吻 火焰";
+		out[91]="大象 坚果";
+		out[92]="破壳 太阳";
+		out[93]="星光 火箭";
+  
+
+
+
+ 		setInterval(loop,disTime);
+ 		function loop()
+ 		{
+ 			d2.innerHTML="+";
+ 			d4.innerHTML="=";
+ 			var src1="emoji/01/"+(i%84+1).toString()+".png";
+ 			var src2="emoji/02/"+(j%84+1).toString()+".png";
+ 			img1.src=src1;
+ 			img2.src=src2;
+ 			i++;
+ 			j++;
+ 			
+ 			res.innerHTML=out[(i%84)+9];
+ 		}
+ 	</script>
+</body></html>

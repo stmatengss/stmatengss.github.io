@@ -17,11 +17,11 @@
 				height:700px;
 				width:1000px;
 			}
-			#dd
+			#d5,#d6
 			{
-				margin-left:200px;
+				margin: 100px auto auto auto;
 			}
-			#main,#headtxt,#dd,#d1,#d2,#d3,#d4,#d5
+			#main,#headtxt,#dd,#d1,#d2,#d3,#d4
 			{
 				margin:0px auto;
 			}
@@ -32,14 +32,18 @@
 				font-weight:bold;
 				font-size: 60px;
 			}
-			#d2,#d4,#d5
+			#d2,#d4
 			{
 				margin-top:60px;
 				height:200px;
 				font-weight:bold;
 				font-size: 60px;
 			}
-			#d1,#d2,#d3,#d4,#d5
+			#res1,#res2
+			{
+				margin-top:60px;
+			}
+			#d1,#d2,#d3,#d4,#d5,#d6
 			{
 				float:left;
 				margin:0px auto;
@@ -47,16 +51,9 @@
 			}
 			#d1
 			{
-				margin-left:160px;
+				margin-left:60px;
 			}
-			#img1
-			{
-				
-			}
-			#img2
-			{
-				
-			}
+
 			#d4
 			{
 				
@@ -65,11 +62,7 @@
 			{
 				
 			}
-			#res
-			{
-				
-			}
-			#headtxt,#p1,#p2,#res
+			#headtxt,#p1,#p2
 			{
 				font-family:"Noto Sans CJK SC", "Source Han Sans CN";
 			}
@@ -81,11 +74,12 @@
 				WHAT IS YOUR BRAND NAME?
 			</div>
 			<div id="dd">
-				<div id="d1"><img id="img1" ></div>
-				<div id="d2"><p id="p1"></p></div>
-				<div id="d3"><img id="img2" ></div>
+				<div id="d1"><img id="img1" src="gif1.gif" height="200px" width="200px"></div>
+				<div id="d2"><p id="p1" ></p></div>
+				<div id="d3"><img id="img2" src="gif2.gif" height="200px" width="200px"></div>
 				<div id="d4"><p id="p2"></p></div>
-				<div id="d5"><p id="res"></p></div>
+				<div id="d5"><img id="res1" src="gifw1.gif" width="200px"></div>
+				<div id="d6"><img id="res2" src="gifw2.gif" width="200px"></div>
 			</div>
 		</div>
 		<!-- <script src="Main.js"></script>  -->
@@ -94,11 +88,20 @@
  		var disTime=1000;
  		var i=0;
  		var j=0;
- 		var img1=document.getElementById("img1");
- 		var img2=document.getElementById("img2");
- 		var res=document.getElementById("res");
+ 		// var img1=document.getElementById("img1");
+ 		// var img2=document.getElementById("img2");
+ 		// var res1=document.getElementById("res1");
+ 		// var res2=document.getElementById("res2");
  		var d2=document.getElementById("p1");
         var d4=document.getElementById("p2");
+        
+        
+        d2.innerHTML="+";
+ 		d4.innerHTML="=";
+        // img1.src="gif1.gif";
+        // img2.src="gif2.gif";
+        // res1.src="gifw1.gif";
+        // res2.src="gifw2.gif";
 		
 		var out=new Array();
 		out[0]="A";
@@ -199,7 +202,7 @@
 
 
 
- 		setInterval(loop,disTime);
+ 		//setInterval(loop,disTime);
  		function loop()
  		{
  			d2.innerHTML="+";

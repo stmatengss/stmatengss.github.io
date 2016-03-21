@@ -49,7 +49,8 @@ document.cookie=c_name+ "=" +escape(value)+
 
 function checkCookie()
 {
-username=getCookie('XXXX')
+username=getCookie('XXXX');
+console.log(username);
 if (username==null || username=="" || username=="NaN")
     setCookie('XXXX',"1",365);
 }

@@ -50,7 +50,7 @@ document.cookie=c_name+ "=" +escape(value)+
 function checkCookie()
 {
 username=getCookie('XXXX')
-if (username==null || username=="")
+if (username==null || username=="" || username=="NaN")
     setCookie('XXXX',"1",365);
 }
 </script>

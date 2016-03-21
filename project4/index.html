@@ -49,23 +49,16 @@ document.cookie=c_name+ "=" +escape(value)+
 
 function checkCookie()
 {
-username=getCookie('username')
-if (username!=null && username!="")
-  {alert('Welcome again '+username+'!')}
-else 
-  {
-  username=prompt('Please enter your name:',"")
-  if (username!=null && username!="")
-    {
-    setCookie('username',username,365)
-    }
-  }
+username=getCookie('XXXX')
+if (username==null || username=="")
+    setCookie('XXXX',"0",365);
 }
 </script>
 
 <script type="text/javascript"> 
 var c=0; 
 var time=0;
+checkCookie();
 var timed=parseInt(getCookie("XXXX"));
 console.log("w:"+getCookie("XXXX"));
 

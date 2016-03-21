@@ -1,33 +1,138 @@
 <html> 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
 <head> 
+
+</head> 
+
+<style>
+
+</style>
+
+<body> 
+<div id="d1">How long have you been online</div>
+<div id="d2"><p id="t1"></p></div>
+<div id="d3"><p id="t2"></p></div>
+<!-- <form> 
+<input type="button" value="开始计时！" onClick="timedCount()">
+<input type="text" id="txt"> 
+<input type="button" value="停止计时！" onClick="stopCount()"> 
+</form>  -->
+<!-- <p>请点击上面的“开始计时”按钮来启动计时器。输入框会一直进行计时，从 0 开始。点击“停止计时”按钮可以终止计时。</p> 
+<p>timedCount(),1000ms自己调自己。</p>  -->
+
+</body> 
+
+<script type="text/javascript">
+function getCookie(c_name)
+{
+if (document.cookie.length>0)
+  {
+  c_start=document.cookie.indexOf(c_name + "=")
+  if (c_start!=-1)
+    { 
+    c_start=c_start + c_name.length+1 
+    c_end=document.cookie.indexOf(";",c_start)
+    if (c_end==-1) c_end=document.cookie.length
+    return unescape(document.cookie.substring(c_start,c_end))
+    } 
+  }
+return ""
+}
+
+function setCookie(c_name,value,expiredays)
+{
+var exdate=new Date()
+exdate.setDate(exdate.getDate()+expiredays)
+document.cookie=c_name+ "=" +escape(value)+
+((expiredays==null) ? "" : ";expires="+exdate.toGMTString())
+}
+
+function checkCookie()
+{
+username=getCookie('username')
+if (username!=null && username!="")
+  {alert('Welcome again '+username+'!')}
+else 
+  {
+  username=prompt('Please enter your name:',"")
+  if (username!=null && username!="")
+    {
+    setCookie('username',username,365)
+    }
+  }
+}
+</script>
+
 <script type="text/javascript"> 
-var c=0 
-var t 
+var c=0; 
+var time=0;
+var timed=parseInt(getCookie("XXXX"));
+console.log("w:"+getCookie("XXXX"));
+
 function timedCount() 
 { 
 document.getElementById('txt').value=c 
 c=c+1 
 t=setTimeout("timedCount()",1000) 
 } 
+
 function stopCount() 
 { 
 clearTimeout(t) 
 } 
 
-//var test=document.getElementById("test");
+function deal(a)
+{
+	var b=parseInt(a);
+	if(b<10)return "0"+b.toString();
+	else return b.toString();
+}
+
+function loop()
+{
+	time++;
+	var t1=document.getElementById("t1");
+	t1.innerHTML=deal(time/3600)+":"+deal(time/60%60)+":"+deal(time%60);
+	
+	var t2=document.getElementById("t2");
+	
+	// var fso = new ActiveXObject("Scripting.FileSystemObject");
+	// var f=fso.OpenTextFile("store",1);
+	// console.log("OK");
+	var tmp=getCookie("XXXX");
+	console.log(tmp);
+	timed=Math.max(timed,time);
+	console.log("timed"+timed.toString());
+	// f.close();
+	
+	t2.innerHTML=deal(timed/3600)+":"+deal(timed/60%60)+":"+deal(timed%60);
+	setCookie("XXXX",timed.toString(),365);
+	
+	// fso = new ActiveXObject("Scripting.FileSystemObject"); 
+	// f = fso.OpenTextFile("store",2);
+	// f.WriteLine(timed.toString());
+	// f.Close();
+}
+
+// setInterval(loop,1000);
+id=setInterval(loop,1000);
+setCookie("XXXX","0",365);
+
 var s="";
+var id;
 
 document.addEventListener("visibilitychange", function () {
     if (document.hidden) {
         // 不可见
-        s=s+"NO";
+        // s=s+"NO";
+        clearInterval(id);
         console.log("No");
     } else  {
        // 可见
-        s=s+"YES";
+        // s=s+"YES";
         //alert(s);
         console.log("Yes");
+        id=setInterval(loop,1000);
     }
 }, false);
 
@@ -35,16 +140,5 @@ document.addEventListener("visibilitychange", function () {
 //setInterval(loop, 10);
 
 </script> 
-</head> 
-<body> 
-	<div id="test"></div>
-<form> 
-<input type="button" value="开始计时！" onClick="timedCount()">
-<input type="text" id="txt"> 
-<input type="button" value="停止计时！" onClick="stopCount()"> 
-</form> 
-<p>请点击上面的“开始计时”按钮来启动计时器。输入框会一直进行计时，从 0 开始。点击“停止计时”按钮可以终止计时。</p> 
-<p>timedCount(),1000ms自己调自己。</p> 
 
-</body> 
 </html> 

@@ -24,22 +24,16 @@ var flag;
 
 document.body.innerHTML="";
 var t;
-var i=103;
+var i=104;
 var layer=7;
 var a=new Array(i);
 var b=new Array(layer);
 
-b[0]=24;
-b[1]=99;
-b[2]=14;
-b[3]=104;
-b[4]=56;
-b[5]=2;
-b[6]=91;
-//for(t=0;t<layer;t++)
-//{
-//	b[t]=PwdGenerate(1, i);
-//}
+
+for(t=0;t<layer;t++)
+{
+	b[t]=PwdGenerate(1, i);
+}
 
 function sz()
 {
@@ -51,7 +45,7 @@ function sz()
 	}
 }
 
-for(t=1;t<i+1;t++)
+for(t=0;t<i;t++)
 {
 	var bt;
 	bt=document.createElement("input");
@@ -156,11 +150,10 @@ function aequal(a,b)
 </script>
 
 <br/>
-<input id="txt1"/><br/>
-<input id="txt2"/><br/>
-<button onclick="sz()">初始化密码</button>
-<input type="button" name="button" id="button" value="dfsdfsd"/>
-
+<input id="txt1" style="visibility:hidden"/>
+<input id="txt2" style="visibility:hidden"/>
+<button onclick="sz()" style="visibility:hidden">初始化密码</button>
+<input type="button" name="button" id="button" value="dfsdfsd" style="visibility:hidden"/>
 
 </body>
 </html>

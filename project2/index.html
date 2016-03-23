@@ -2,20 +2,22 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>无标题文档</title>
+<title>回车运行</title>
 </head>
 <body>
 
-<script type="text/javascript">
-
+<script>
 
 //监听回车事件
 document.onkeydown=keyDownSearch;  
     function keyDownSearch(e) {        
         var theEvent = e || window.event;    
         var code = theEvent.keyCode || theEvent.which || theEvent.charCode;    
-        if (code == 13) {    
-            sz();  
+        if (code == 13) { 
+            if(bool_move)		
+            {sz();  bool_move=false;}
+			else
+			{stopx();bool_move=true;}
             return false;    
         }    
         return true;    
@@ -23,6 +25,7 @@ document.onkeydown=keyDownSearch;
 	
 
 var t;
+var bool_move=true;
 var initLines=35;
 var initRows=66;
 var totalNumber=initLines*initRows;
@@ -43,6 +46,9 @@ var line;
 var row;
 var findc;
 var jjj;
+
+var deltaX_temp=1;
+var deltaY_temp=1;
 
 var wi=document.body.clientWidth;
 var he=window.outerHeight;
@@ -77,6 +83,8 @@ for(t=1;t<totalNumber+1;t++)
 
 function sz()
 {
+	ttt=1;
+	iii=0;
 	var bt=document.getElementsByName("qazaq");
 	while(ttt<totalNumber)
 	{
@@ -94,8 +102,8 @@ function sz()
 	//alert(getMin(lineArray));
 	for(ttt=0;ttt<lineArray.length;ttt++)
 	{
-		deltaX[ttt]=1;
-		deltaY[ttt]=1;
+		deltaX[ttt]=deltaX_temp;
+		deltaY[ttt]=deltaY_temp;
 		uplimitX[ttt]=initLines-1+lineArray[ttt]-getMax(lineArray);
 		downlimitX[ttt]=lineArray[ttt]-getMin(lineArray);
 		uplimitY[ttt]=initRows-1+rowArray[ttt]-getMax(rowArray);
@@ -108,25 +116,27 @@ function sz()
 		{
 			lineArray[jjj]=lineArray[jjj]+deltaX[jjj];
 			rowArray[jjj]=rowArray[jjj]+deltaY[jjj];
-		//	bt[objArray[jjj]].checked=false;.
 			bt[objArray[jjj]].checked=!bt[objArray[jjj]].checked;
 			increment=deltaX[jjj]*initRows+deltaY[jjj];
 			objArray[jjj]=objArray[jjj]+increment;
-		//	bt[objArray[jjj]].checked=true;
 			bt[objArray[jjj]].checked=!bt[objArray[jjj]].checked;
 			
 
 			if(lineArray[jjj]==uplimitX[jjj]){
 				deltaX[jjj]=-1;
+				deltaX_temp=deltaX[jjj];
 			}
 			if(lineArray[jjj]==downlimitX[jjj]){
 				deltaX[jjj]=1;
+				deltaX_temp=deltaX[jjj];
 			}
 			if(rowArray[jjj]==uplimitY[jjj]){
 				deltaY[jjj]=-1;
+				deltaY_temp=deltaY[jjj];
 			}
 			if(rowArray[jjj]==downlimitY[jjj]){
 				deltaY[jjj]=1;
+				deltaY_temp=deltaY[jjj];
 			}
 		}
 	},

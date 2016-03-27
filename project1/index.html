@@ -30,18 +30,10 @@ var a=new Array(i);
 var b=new Array(layer);
 
 
-b[0]=1;
-b[1]=2;
-b[2]=3;
-b[3]=4;
-b[4]=5;
-b[5]=6;
-b[6]=7;
-
-//for(t=0;t<layer;t++)
-//{
-//	b[t]=PwdGenerate(1, i);
-//}
+for(t=0;t<layer;t++)
+{
+	b[t]=PwdGenerate(1, i);
+}
 
 function sz()
 {
@@ -106,6 +98,18 @@ for(t=0;t<i;t++)
 	//document.write("<br />") ;
 }
 
+function backOff()
+{
+	if(CurrentCount==0)
+	{
+		alert("当前不可倒退！");
+	}
+	else
+	{
+		CurrentCount=CurrentCount-1;
+	}
+}
+
 function initAll()
 {
 	var objs = document.all;
@@ -158,10 +162,10 @@ function aequal(a,b)
 </script>
 
 <br/>
+<input onclick="backOff()" type="button" name="button" class="btn" id="button" value="" style="width:34px; height:34px; background-image:url(img/doorin2.gif)"/>
 <input id="txt1" style="visibility:hidden"/>
 <input id="txt2" style="visibility:hidden"/>
 <button onclick="sz()" style="visibility:hidden">初始化密码</button>
-<input type="button" name="button" id="button" value="dfsdfsd" style="visibility:hidden"/>
 
 </body>
 </html>

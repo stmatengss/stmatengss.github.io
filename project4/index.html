@@ -14,24 +14,35 @@
 }
 #d2
 {
-	margin: 0px 0px 0px 0px;
-	text-align: center;
-	font-weight:bold;
 	font-size: 200px;
+	height:200px;
 }
 #d3
 {
+	font-size: 20px;
+	height:20px;
+}
+#d4{
 	margin: 0px 0px 0px 0px;
+	height: 200px;
 	text-align: center;
 	font-weight:bold;
-	font-size: 20px;
 }
+body
+  { 
+  background: #00FF00 url(back.gif) no-repeat fixed top ;
+  background-size:cover;
+  }
 </style>
 
-<body> 
+
+<body id="background"> 
 <div id="d1">How long have you been online</div>
+<div id=d4>
 <div id="d2"><p id="t1"></p></div>
 <div id="d3"><p id="t2"></p></div>
+<div id="d5"></div>
+</div>
 <!-- <form> 
 <input type="button" value="开始计时！" onClick="timedCount()">
 <input type="text" id="txt"> 
@@ -40,7 +51,7 @@
 <!-- <p>请点击上面的“开始计时”按钮来启动计时器。输入框会一直进行计时，从 0 开始。点击“停止计时”按钮可以终止计时。</p> 
 <p>timedCount(),1000ms自己调自己。</p>  -->
 
-</body> 
+</body > 
 
 <script type="text/javascript">
 function getCookie(c_name)

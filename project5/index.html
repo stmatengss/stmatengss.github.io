@@ -48,11 +48,15 @@ var he=window.outerHeight;
 var initLines=parseInt(he/22);
 var initRows=parseInt(wi/19);
 totalNumber=initLines*initRows;
-for(t=1;t<(wi/30)*25+1;t++)
+var i,j;
+var len = 3;
+var maxone=parseInt(wi/30)
+
+for(i=1;i<=25;i++)for(j=1;j<=maxone;j++)
 {
 	var bt;
 	bt=document.createElement("div");
-	bt.id="qazaq"+t.toString();
+	bt.id=i.toString()+"_"+j.toString();
 //	bt.type="checkbox";
 //	bt.value=t;
 //	bt.style.fontSize="0px";
@@ -70,15 +74,72 @@ for(t=1;t<(wi/30)*25+1;t++)
 	//document.write("<br />") ;
 }
 
-for(t=1;t<(wi/30)*25+1;t++)
+for(i=1;i<=25;i++)for(j=1;j<=maxone;j++)
 {
 	console.log(t);
-	var bt=document.getElementById("qazaq"+t.toString());
+	var bt=document.getElementById(i.toString()+"_"+j.toString());
 	bt.addEventListener("mouseover", function(){
-		this.style.backgroundImage="url('a.gif')";
+		var tmp=this.id;
+		var ii="";
+		var jj="";
+		var c=0;
+		var flag=1;
+		for (c=0;c<tmp.length;c++)
+		{
+			if(tmp[c]=='_')
+			{
+				flag=0;
+			}
+			else
+			{
+				if(flag)ii+=tmp[c];
+				else jj+=tmp[c];
+			}		
+		}
+		ii=parseInt(ii);
+		jj=parseInt(jj);
+		console.log("!!!!!!!!!");
+		for(iii=Math.max(1,ii-3);iii<=Math.min(ii+3,25);iii++)
+		{
+			len=3-Math.abs(iii-ii);
+			for(jjj=Math.max(1,jj-len);jjj<=Math.min(jj+len,maxone);jjj++)
+			{
+				console.log(iii,jjj);
+				document.getElementById(iii.toString()+"_"+jjj.toString()).style.backgroundImage="url('a.gif')";
+			}
+		}
 	});
 	bt.addEventListener("mouseout", function(){
-		this.style.backgroundImage="url('1.png')";
+		
+		var tmp=this.id;
+		var ii="";
+		var jj="";
+		var c=0;
+		var flag=1;
+		for (c=0;c<tmp.length;c++)
+		{
+			if(tmp[c]=='_')
+			{
+				flag=0;
+			}
+			else
+			{
+				if(flag)ii+=tmp[c];
+				else jj+=tmp[c];
+			}		
+		}
+		ii=parseInt(ii);
+		jj=parseInt(jj);
+		
+		for(iii=Math.max(1,ii-3);iii<=Math.min(ii+3,25);iii++)
+		{
+			len=3-Math.abs(iii-ii);
+			for(jjj=Math.max(1,jj-len);jjj<=Math.min(jj+len,maxone);jjj++)
+			{
+				
+				document.getElementById(iii.toString()+"_"+jjj.toString()).style.backgroundImage="url('1.png')";
+			}
+		}
 	});
 	
 }

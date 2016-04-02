@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+</head>
+<body>
+
+
+</body>
+<script>
+
+	var bt;
+	bt=document.createElement("div");
+	bt.name="qazaq";
+//	bt.type="checkbox";
+//	bt.value=t;
+//	bt.style.fontSize="0px";
+	bt.style.height="26px";
+	bt.style.width="26px";
+	bt.style.marginLeft="4px";
+	bt.style.marginTop="4px";
+	bt.style.backgroundImage="url('1.png')";
+	bt.style.backgroundRepeat="no-repeat";
+	bt.style.backgroundPosition="center";
+	bt.style.border="none";
+	bt.addEventListener("onclick", function(){
+		alert("1");
+		this.style.backgroundImage="url('a.gif')";
+	});
+	bt.addEventListener("onmouseover", function(){
+		alert("1");
+		this.style.backgroundImage="url('a.gif')";
+	});
+	bt.addEventListener("onmouseout", function(){
+		this.style.backgroundImage="url('1.png')";
+	});
+	document.body.appendChild(bt);
+
+</script>
+</html>

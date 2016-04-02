@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title></title>
+</head>
+<body>
+
+
+</body>
+<script>
+//监听回车事件
+function mOver(obj)
+{
+	obj.style.backgroundImage="url('a.gif')";
+}
+
+function mOut(obj)
+{
+	obj.style.backgroundImage="url('1.png')";
+}
+var t;
+var bool_move=true;
+var initLines=20;
+var initRows=33;
+var totalNumber=initLines*initRows;
+var intX;
+var deltaX=new Array(totalNumber);
+var deltaY=new Array(totalNumber);
+var uplimitX=new Array(totalNumber);
+var downlimitX=new Array(totalNumber);
+var uplimitY=new Array(totalNumber);
+var downlimitY=new Array(totalNumber);
+var increment;//=deltaX*initRows+deltaY;
+var objArray=new Array();
+var lineArray=new Array();
+var rowArray=new Array();
+var ttt=1;
+var iii=0;
+var line;
+var row;
+var findc;
+var jjj;
+var deltaX_temp=1;
+var deltaY_temp=1;
+var wi=document.body.clientWidth;
+var he=window.outerHeight;
+var initLines=parseInt(he/22);
+var initRows=parseInt(wi/19);
+totalNumber=initLines*initRows;
+for(t=1;t<(wi/30)*25+1;t++)
+{
+	var bt;
+	bt=document.createElement("div");
+	bt.id="qazaq"+t.toString();
+//	bt.type="checkbox";
+//	bt.value=t;
+//	bt.style.fontSize="0px";
+	bt.style.float="left";
+	bt.style.height="26px";
+	bt.style.width="26px";
+	bt.style.marginLeft="4px";
+	bt.style.marginTop="4px";
+	bt.style.backgroundImage="url('1.png')";
+	bt.style.backgroundRepeat="no-repeat";
+	bt.style.backgroundPosition="center";
+	//bt.style.border="none";
+	document.body.appendChild(bt);
+	//if(t%43==0)
+	//document.write("<br />") ;
+}
+
+for(t=1;t<(wi/30)*25+1;t++)
+{
+	console.log(t);
+	var bt=document.getElementById("qazaq"+t.toString());
+	bt.addEventListener("mouseover", function(){
+		this.style.backgroundImage="url('a.gif')";
+	});
+	bt.addEventListener("mouseout", function(){
+		this.style.backgroundImage="url('1.png')";
+	});
+	
+}
+function sz()
+{
+	ttt=1;
+	iii=0;
+	var bt=document.getElementsByName("qazaq");
+	while(ttt<totalNumber)
+	{
+		if(bt[ttt].checked)
+		{
+		//	alert(ttt);
+			lineArray[iii]=parseInt(ttt/initRows);
+			rowArray[iii]=ttt%initRows;
+			objArray[iii]=ttt;
+			iii=iii+1;
+		}
+		ttt=ttt+1;
+	}
+	
+	//alert(getMin(lineArray));
+	for(ttt=0;ttt<lineArray.length;ttt++)
+	{
+		deltaX[ttt]=deltaX_temp;
+		deltaY[ttt]=deltaY_temp;
+		uplimitX[ttt]=initLines-1+lineArray[ttt]-getMax(lineArray);
+		downlimitX[ttt]=lineArray[ttt]-getMin(lineArray);
+		uplimitY[ttt]=initRows-1+rowArray[ttt]-getMax(rowArray);
+		downlimitY[ttt]=rowArray[ttt]-getMin(rowArray);
+	}
+	
+	intX=window.setInterval(function()
+	{
+		for(jjj=0;jjj<lineArray.length;jjj++)
+		{
+			lineArray[jjj]=lineArray[jjj]+deltaX[jjj];
+			rowArray[jjj]=rowArray[jjj]+deltaY[jjj];
+			bt[objArray[jjj]].checked=!bt[objArray[jjj]].checked;
+			increment=deltaX[jjj]*initRows+deltaY[jjj];
+			objArray[jjj]=objArray[jjj]+increment;
+			bt[objArray[jjj]].checked=!bt[objArray[jjj]].checked;
+			
+			if(lineArray[jjj]==uplimitX[jjj]){
+				deltaX[jjj]=-1;
+				deltaX_temp=deltaX[jjj];
+			}
+			if(lineArray[jjj]==downlimitX[jjj]){
+				deltaX[jjj]=1;
+				deltaX_temp=deltaX[jjj];
+			}
+			if(rowArray[jjj]==uplimitY[jjj]){
+				deltaY[jjj]=-1;
+				deltaY_temp=deltaY[jjj];
+			}
+			if(rowArray[jjj]==downlimitY[jjj]){
+				deltaY[jjj]=1;
+				deltaY_temp=deltaY[jjj];
+			}
+		}
+	},
+	50);
+	
+}
+function stopx(){  
+    window.clearInterval(intX) //注意！如果var intX定义在startX内，则无法清除！  
+} 
+function getMax(myArray)
+{
+	var igm;
+	var Max;
+	Max=myArray[0];
+	for(igm=0;igm<myArray.length;igm++)
+	{
+		if(Max<myArray[igm])
+		Max=myArray[igm];
+	}
+	return Max;
+}
+function getMin(myArray)
+{
+	var igm;
+	var Min;
+	Min=myArray[0];
+	for(igm=0;igm<myArray.length;igm++)
+	{
+		if(Min>myArray[igm])
+		Min=myArray[igm];
+	}
+	return Min;
+}
+</script>
+</html>

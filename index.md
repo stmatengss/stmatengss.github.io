@@ -17,11 +17,15 @@ My research interests include distributed database, Remote Direct Memory Access 
 * Mathematical Contest In Modeling Honorable Mention, 2015
 
 # Publication
-* Zhang M, Wu Y, Chen K, et al. Measuring and optimizing distributed array programs[J]. Proceedings of The Vldb Endowment, 2016, 9(12): 912-923.
+
+* Zhang, M., Wu, Y., Chen, K., $Ma, T$., & Zheng, W. (2016). Measuring and optimizing distributed array programs. Proceedings of The Vldb Endowment, 9(12), 912-923.
 
 # Contact
+
 Phone: (+86) 15652933334
+
 Email: mt16@mails.tsinghua.edu.cn Or stmatengss@163.com
+
 Address: Department of Computer Science and Technology, Tsinghua National Laboratory for Information Science and Technology (TNLIST), Tsinghua University, Beijing 100084, China
 
 

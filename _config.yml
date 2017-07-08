@@ -4,5 +4,24 @@ google_analytics:
 show_downloads: false
 theme: jekyll-theme-minimal
 
+sharing :
+  provider : all
+       twitter :
+         size :
+         via :
+         count :
+     facebook :
+         appid : 123
+         layout : button_count
+         font :
+         faces : false
+         width : 90
+     googleplus :
+         size : medium
+         width :
+         annotation : bubble
+     linkedin :
+         counter : right 
+
 gems:
   - jekyll-mentions

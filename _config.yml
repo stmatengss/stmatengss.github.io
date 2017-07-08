@@ -2,7 +2,7 @@ title: Never Leave The Sun
 description: "`Focused`"
 google_analytics: 
 show_downloads: true
-theme: jekyll-theme-minimal
+theme: jekyll-theme-merlot
 
 gems:
   - jekyll-mentions

@@ -18,7 +18,7 @@ My research interests include distributed database, Remote Direct Memory Access 
 
 # Publication
 
-* Zhang, M., Wu, Y., Chen, K., $Ma, T$., & Zheng, W. (2016). Measuring and optimizing distributed array programs. Proceedings of The Vldb Endowment, 9(12), 912-923.
+* Zhang, M., Wu, Y., Chen, K., **Ma, T**., & Zheng, W. (2016). Measuring and optimizing distributed array programs. Proceedings of The Vldb Endowment, 9(12), 912-923.
 
 # Contact
 

@@ -4,6 +4,10 @@ google_analytics:
 show_downloads: false
 theme: jekyll-theme-minimal
 
+social:
+  Linkedin: https://www.linkedin.com/in/ma-teng-69a0a8115/
+  Stackoverflow: https://stackoverflow.com/users/5955640/stmatengss
+
 sharing :
   provider : all
        twitter :

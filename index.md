@@ -6,7 +6,8 @@ My research advisors are Prof.Yongwei Wu and Prof.Kang Chen.
 
 My research interests include distributed database, Remote Direct Memory Access (RDMA), Non-Volatile Memory(NVM), and key-value store systems.
 
-My blog is [**here**](https://stmatengss.github.io/blog/)
+My blog is [**here**](https://stmatengss.github.io/blog/).
+My linkedin account is [**here**](https://www.linkedin.com/in/ma-teng-69a0a8115/).
 
 # Awards
 
@@ -17,6 +18,7 @@ My blog is [**here**](https://stmatengss.github.io/blog/)
 * the chess AI contest of China Second Class Prize, 2015
 * China IOT(Internet of Things) contest First Class Prize, 2014
 * Mathematical Contest In Modeling Honorable Mention, 2015
+* The 5th RDMA Programming Competition Third Prize, 2017
 
 # Publication
 

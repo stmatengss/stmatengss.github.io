@@ -3,3 +3,4 @@
 * vCorfu: A Cloud-Scale Object Store on a Shared Log
 * Flat Combining and the Synchronization-Parallelism Tradeoff
 * Tango: Distributed Data Structures over a Shared Log
+* Black-box Concurrent Data Structures for NUMA Architectures

@@ -1,0 +1,82 @@
+.left{
+	/*background-color: #e1e1e1;*/
+	width: 828px
+}
+
+.right{
+	/*background-color: #aabbcc;*/
+    width: 436px
+}
+
+.left{
+	margin: 24px 24px 24px 24px;
+	float: left;
+	height: 100%
+}
+
+.right{
+	margin: 24px 24px 24px 24px;
+	float: right;
+	height: 100%;
+	right: 288px
+}
+
+.content{
+    width: 408px;
+	height: 816px;
+	margin: 0px, 0px, 24px, 0px;
+	line-height: 24px;
+	word-break: break-all
+}
+
+.content-box{
+	/*width: 408px;*/
+	height: 816px;
+	margin: 0px, 0px, 24px, 0px;
+	line-height: 24px;
+    background-color: #e1e1e1
+}
+
+.btn {
+	background-color:transparent;  /* 背景色透明 */
+	border:0px;       /* 边框取消 */
+	font-weight:bold;
+	font-size:40px;
+	margin-left:15px;
+}
+
+.fill-block {
+/*    background-color: #000000;	
+	float: right;
+*/	width: 100%;
+	height: 60px
+}
+
+.block {
+    background-color: #000000;	
+	float: right;
+	width: 100px;
+	height: 40px
+}
+
+.text-para {
+	font-size: 20px
+}
+
+.text-head {
+	line-height: 36px;
+	font-size: 36px;
+	font-weight:bold
+
+}
+
+.right-content {
+	margin: 24px 24px 24px 24px
+}
+
+.fake-figure {
+	background-color: #111111;	
+	margin: 24px 24px 24px 24px;
+	width: 720px;
+	height: 480px
+}

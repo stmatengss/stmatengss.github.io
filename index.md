@@ -12,13 +12,13 @@ My linkedin account is [**here**](https://www.linkedin.com/in/ma-teng-69a0a8115/
 # Awards
 
 * National Scholarship, USTB, 2015
-* ACM-ICPC China Shanghai Metropolitan Programming Contest Bronze Model, 2015
-* ACM-ICPC Asia Shanghai Regional Contest Bronze Model, 2015
-* Blue Bridge Cup C/C++ Second Prize, 2014
-* the chess AI contest of China Second Class Prize, 2015
-* China IOT(Internet of Things) contest First Class Prize, 2014
-* Mathematical Contest In Modeling Honorable Mention, 2015
-* The 5th RDMA Programming Competition Third Prize, 2017
+* ACM-ICPC China Shanghai Metropolitan Programming Contest, Bronze Model, 2015
+* ACM-ICPC Asia Shanghai Regional Contest, Bronze Model, 2015
+* Blue Bridge Cup C/C++, Second Prize, 2014
+* The chess AI contest of China, Second Class Prize, 2015
+* China IOT(Internet of Things) contest, First Class Prize, 2014
+* Mathematical Contest In Modeling, Honorable Mention, 2015
+* The 5th RDMA Programming Competition, Third Prize, 2017
 
 # Publication
 

@@ -28,6 +28,8 @@ My linkedin account is [**here**](https://www.linkedin.com/in/ma-teng-69a0a8115/
 * Large Scale Communication in Cloud Needs Hybrid RDMA Schema; **Teng Ma**, Mingxing Zhang, Zhuo Song, Mengxing Liu, Kang Chen, Yongwei Wu, 13th USENIX Symposium on Operating Systems Design and Implementation (OSDI), 2018 (Poster Only)
 * NVM allocator in Disaggregation Era; **Teng Ma**, Mingxing Zhang, Dongbiao He, Kang Chen, Yongwei Wu, 13th USENIX Symposium on Operating Systems Design and Implementation (OSDI), 2018 (Poster Only)
 * Measuring and Optimizing Distributed Array Programs; Mingxing Zhang, Yongwei Wu, Kang Chen, **Teng Ma**, Weimin Zheng; 42nd International Conference on Very Large Data Bases (VLDB), 2016
+* A Case for Asymmetric Non-Volatile Memory Architecture; **Teng Ma**, Mingxing Zhang, Kang Chen, Xuehai Qian, Yongwei Wu; 52nd IEEE/ACM International Symposium on Microarchitecture (MICRO), arXiv:1809.09395, 2019, submitted
+* X-RDMA: Effective RDMA Middleware in Large-scale Production; **Teng Ma**, Tao Ma, Zhuo Song, Kang Chen, Hai Jiang, Yongwei Wu; 2018 IEEE International Conference on Cluster Computing (CLUSTER), 2019; submitted
 <!-- * Zhang, M., Wu, Y., Chen, K., **Ma, T**., & Zheng, W. (2016). Measuring and optimizing distributed array programs. Proceedings of The Vldb Endowment, 9(12), 912-923. -->
 
 # Contact

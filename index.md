@@ -1,10 +1,10 @@
 # Brief Bio
 
-I was born in Fuyang, Anhui, China. I received my Bachelor degree in computer science from University of Science and Technology Beijng, China in July 2016. Now I am a PhD student in Department of Computer Science and Technology, Tsinghua University, China.
+I was born in Fuyang, Anhui, China. I received my Bachelor degree in computer science from University of Science and Technology Beijng, China in July 2016. Now I am a PhD candidate in Department of Computer Science and Technology, Tsinghua University, China.
 
 My research advisors are [Prof. Yongwei Wu](http://madsys.cs.tsinghua.edu.cn/~yongweiwu/) and [Prof. Kang Chen](http://madsys.cs.tsinghua.edu.cn/~kangchen/). Currently, I work closely with [Dr. Mingxing Zhang](http://madsys.cs.tsinghua.edu.cn/~zhangmx/) and [Prof. Xuehai Qian](http://alchem.usc.edu/portal/xuehaiq.html).
 
-My research interests include distributed database, Remote Direct Memory Access (RDMA), Non-Volatile Memory(NVM), and key-value store systems.
+My research interests include distributed database, Remote Direct Memory Access (RDMA), Non-Volatile Memory(NVM), Out-of-core Graph Processing, and key-value store systems.
 
 My blog is [**here**](https://stmatengss.github.io/blog/).
 My linkedin account is [**here**](https://www.linkedin.com/in/ma-teng-69a0a8115/).

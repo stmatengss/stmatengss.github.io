@@ -9,7 +9,9 @@ My research interests include distributed database, Remote Direct Memory Access 
 My blog is [**here**](https://stmatengss.github.io/blog/).
 My linkedin account is [**here**](https://www.linkedin.com/in/ma-teng-69a0a8115/).
 
-**I am seeking a visiting scholar position for half year.**
+~~I am seeking a visiting scholar position for half year.~~
+
+I will join in [Prof. Shan Lu]'s group as a visiting student in December.
 
 # Awards
 
@@ -31,7 +33,7 @@ My linkedin account is [**here**](https://www.linkedin.com/in/ma-teng-69a0a8115/
 * NVM allocator in Disaggregation Era; **Teng Ma**, Mingxing Zhang, Dongbiao He, Kang Chen, Yongwei Wu, 13th USENIX Symposium on Operating Systems Design and Implementation (OSDI), 2018 (Poster Only)
 * Measuring and Optimizing Distributed Array Programs; Mingxing Zhang, Yongwei Wu, Kang Chen, **Teng Ma**, Weimin Zheng; 42nd International Conference on Very Large Data Bases (VLDB), 2016
 * A Case for Asymmetric Non-Volatile Memory Architecture; **Teng Ma**, Mingxing Zhang, Kang Chen, Xuehai Qian, Zhuo Song, Yongwei Wu; 46nd International Conference on Very Large Data Bases (VLDB), arXiv:1809.09395, 2019, submitted
-* AsymNVM: An Efficient Framework for Implementing Persistent Data Structures on Asymmetric NVM Architecture; **Teng Ma**, Tao Ma, Zhuo Song, Kang Chen, Hai Jiang, Yongwei Wu; 2018 IEEE International Conference on Cluster Computing (CLUSTER), 2019; submitted
+* AsymNVM: An Efficient Framework for Implementing Persistent Data Structures on Asymmetric NVM Architecture; **Teng Ma**, Tao Ma, Zhuo Song, Kang Chen, Hai Jiang, Yongwei Wu; 2018 IEEE International Conference on Cluster Computing (CLUSTER), 2019, to be appeared
 <!-- * Zhang, M., Wu, Y., Chen, K., **Ma, T**., & Zheng, W. (2016). Measuring and optimizing distributed array programs. Proceedings of The Vldb Endowment, 9(12), 912-923. -->
 
 # Contact

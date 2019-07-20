@@ -11,7 +11,7 @@ My linkedin account is [**here**](https://www.linkedin.com/in/ma-teng-69a0a8115/
 
 ~~I am seeking a visiting scholar position for half year.~~
 
-I will join in [Prof. Shan Lu]'s group as a visiting student in December.
+I will join in [Prof. Shan Lu](http://people.cs.uchicago.edu/~shanlu/)'s group as a visiting student in December.
 
 # Awards
 

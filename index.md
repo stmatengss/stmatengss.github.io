@@ -21,7 +21,7 @@ I will join in [Prof. Shan Lu](http://people.cs.uchicago.edu/~shanlu/)'s group a
 * ACM-ICPC Asia Shanghai Regional Contest, Bronze Model, 2015
 * Blue Bridge Cup C/C++, Second Prize, 2014
 <!-- * The chess AI contest of China, Second Prize, 2015 -->
-* China IOT(Internet of Things) contest, First Prize, 2014
+<!-- * China IOT(Internet of Things) contest, First Prize, 2014 -->
 * Mathematical Contest In Modeling, Honorable Mention, 2015
 * The 5th RDMA Programming Competition, Third Prize, 2017
 <!-- * The 1th APAC HPC-AI Competition, First Place, 2018 -->

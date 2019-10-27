@@ -1,6 +1,7 @@
 # Brief Bio
 
-I was born in Anhui, China. I received my Bachelor degree in computer science from University of Science and Technology Beijng, China in July 2016. Now I am a PhD candidate in Department of Computer Science and Technology, Tsinghua University, China. I joined Alibaba as a research intern in September 2018.
+I was born in Anhui, China. I received my Bachelor degree in computer science from University of Science and Technology Beijng, China in July 2016. Now I am a PhD candidate in Department of Computer Science and Technology, Tsinghua University, China.
+<!-- I joined Alibaba as a research intern in September 2018. -->
 
 My research advisors are [Prof. Yongwei Wu](http://madsys.cs.tsinghua.edu.cn/~yongweiwu/) and [Prof. Kang Chen](http://madsys.cs.tsinghua.edu.cn/~kangchen/). Currently, I work closely with [Dr. Mingxing Zhang](http://madsys.cs.tsinghua.edu.cn/~zhangmx/) and [Prof. Xuehai Qian](http://alchem.usc.edu/portal/xuehaiq.html).
 
@@ -19,11 +20,11 @@ I will join in [Prof. Shan Lu](http://people.cs.uchicago.edu/~shanlu/)'s group a
 * ACM-ICPC China Shanghai Metropolitan Programming Contest, Bronze Model, 2015
 * ACM-ICPC Asia Shanghai Regional Contest, Bronze Model, 2015
 * Blue Bridge Cup C/C++, Second Prize, 2014
-* The chess AI contest of China, Second Prize, 2015
+<!-- * The chess AI contest of China, Second Prize, 2015 -->
 * China IOT(Internet of Things) contest, First Prize, 2014
 * Mathematical Contest In Modeling, Honorable Mention, 2015
 * The 5th RDMA Programming Competition, Third Prize, 2017
-* The 1th APAC HPC-AI Competition, First Place, 2018
+<!-- * The 1th APAC HPC-AI Competition, First Place, 2018 -->
 * The 6th RDMA Programming Competition, First Prize, 2018
 
 # Publication

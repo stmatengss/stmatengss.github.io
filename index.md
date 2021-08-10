@@ -1,20 +1,23 @@
 # Brief Bio
 
-I was born in Anhui, China. I received my Bachelor degree in computer science from University of Science and Technology Beijng, China in July 2016. Now I am a PhD candidate in Department of Computer Science and Technology, Tsinghua University, China.
-I have joined Alibaba as a research intern from Sep 2018 to Dec 2019.
+<!-- I was born in Anhui, China. I received my Bachelor degree in computer science from University of Science and Technology Beijng, China in July 2016. Now I am a PhD candidate in Department of Computer Science and Technology, Tsinghua University, China. -->
+I was born in Anhui, China. I received my Bachelor degree in computer science from University of Science and Technology Beijng, China in July 2016 and my PhD degree in computer science from Tsinghua University, China in June 2021. During my Phd, my research advisors are [Prof. Yongwei Wu](http://madsys.cs.tsinghua.edu.cn/~yongweiwu/) and [Prof. Kang Chen](http://madsys.cs.tsinghua.edu.cn/~kangchen/), and  work closely with [Dr. Mingxing Zhang](http://madsys.cs.tsinghua.edu.cn/~zhangmx/) and [Prof. Xuehai Qian](http://alchem.usc.edu/portal/xuehaiq.html). I have spent half a year as a visiting student at [Prof. Shan Lu's group](http://people.cs.uchicago.edu/~shanlu/) at the University of Chicago.
+<!-- I have joined Alibaba as a research intern from Sep 2018 to Dec 2019. -->
 
-My research advisors are [Prof. Yongwei Wu](http://madsys.cs.tsinghua.edu.cn/~yongweiwu/) and [Prof. Kang Chen](http://madsys.cs.tsinghua.edu.cn/~kangchen/). 
+<!-- My research advisors are [Prof. Yongwei Wu](http://madsys.cs.tsinghua.edu.cn/~yongweiwu/) and [Prof. Kang Chen](http://madsys.cs.tsinghua.edu.cn/~kangchen/). 
 
 Currently, I work closely with [Dr. Mingxing Zhang](http://madsys.cs.tsinghua.edu.cn/~zhangmx/) and [Prof. Xuehai Qian](http://alchem.usc.edu/portal/xuehaiq.html).
+ -->
 
-My research interests include distributed database, Remote Direct Memory Access (RDMA), Non-Volatile Memory(NVM), Out-of-core Graph Processing, and key-value store systems.
+Currently, I have joined Alibaba as a researcher.
+My research interests include Remote Direct Memory Access (RDMA), Kernel scheduling, Non-Volatile Memory(NVM), Out-of-core Graph Processing, and key-value store systems.
 
 My blog is [**here**](https://stmatengss.github.io/blog/).
 My linkedin account is [**here**](https://www.linkedin.com/in/ma-teng-69a0a8115/).
 
-~~I am seeking a visiting scholar position for half year.~~
+<!-- ~~I am seeking a visiting scholar position for half year.~~ -->
 
-I will join in [Prof. Shan Lu](http://people.cs.uchicago.edu/~shanlu/)'s group as a visiting student in December.
+<!-- I will join in [Prof. Shan Lu](http://people.cs.uchicago.edu/~shanlu/)'s group as a visiting student in December. -->
 
 # Awards
 
@@ -37,7 +40,7 @@ I will join in [Prof. Shan Lu](http://people.cs.uchicago.edu/~shanlu/)'s group a
 * NVM allocator in Disaggregation Era; **Teng Ma**, Mingxing Zhang, Dongbiao He, Kang Chen, Yongwei Wu, 13th USENIX Symposium on Operating Systems Design and Implementation (OSDI), 2018 (Poster Only)
 * Measuring and Optimizing Distributed Array Programs; Mingxing Zhang, Yongwei Wu, Kang Chen, **Teng Ma**, Weimin Zheng; 42nd International Conference on Very Large Data Bases (VLDB), 2016
 * AsymNVM: An Efficient Framework for Implementing Persistent Data Structures on Asymmetric NVM Architecture; **Teng Ma**, Mingxing Zhang, Kang Chen, Xuehai Qian, Zhuo Song, Yongwei Wu; 25th International Conference on Architectural Support for  Programming Languages and Operating Systems (ASPLOS), 2020
-* Insights on Performance Analysis of RDMA Memory-Semantics; **Teng Ma**, Kang Chen, Xuehai Qian, Yongwei Wu; under review
+* Thinking More about RDMA Memory Semantics; **Teng Ma**, Kang Chen, Shaonan Ma, Zhuo Song, Yongwei Wu; 2021 IEEE International Conference on Cluster Computing (CLUSTER), 2019
 
 <!-- * Zhang, M., Wu, Y., Chen, K., **Ma, T**., & Zheng, W. (2016). Measuring and optimizing distributed array programs. Proceedings of The Vldb Endowment, 9(12), 912-923. -->
 

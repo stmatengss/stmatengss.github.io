@@ -1,8 +1,8 @@
 title: Teng Ma
-description: Phd student in Tsinghua Univ.
+description: Engineer@Alibaba, Phd@Tsinghua.
 google_analytics: 
 show_downloads: false
-theme: jekyll-theme-minimal
+theme: jekyll-theme-cayman #jekyll-theme-minimal
 
 gems:
   - jekyll-mentions

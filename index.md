@@ -34,15 +34,15 @@ My linkedin account is [**here**](https://www.linkedin.com/in/ma-teng-69a0a8115/
 
 # Publication
 
+* Thinking More about RDMA Memory Semantics; **Teng Ma**, Kang Chen, Shaonan Ma, Zhuo Song, Yongwei Wu; 2021 IEEE International Conference on Cluster Computing (CLUSTER), 2021
+* CUBIST: High-Quality 360-Degree Video Streaming Services via Tile-based Edge Caching and FoV-Adaptive Prefetching; Dongbiao He, **Teng Ma**, Jinlei Jiang, Cedric Westphal, Guangwen Yang, Shutao Xia and Jose Garcia-Luna-Aceves; 2021 IEEE International Conference on Web Services (ICWS), 2021
+* HybridSkipList: A Case Study of Designing Distributed Data Structure with Hybrid RDMA; **Teng Ma**, Ning Liu and Dongbiao He; 45th Annual International Computer Software and Applications Conference (COMPAC), 2021
+* AsymNVM: An Efficient Framework for Implementing Persistent Data Structures on Asymmetric NVM Architecture; **Teng Ma**, Mingxing Zhang, Kang Chen, Xuehai Qian, Zhuo Song, Yongwei Wu; 25th International Conference on Architectural Support for  Programming Languages and Operating Systems (ASPLOS), 2020
 * X-RDMA: Effective RDMA Middleware in Large-scale Production Environments; **Teng Ma**, Tao Ma, Zhuo Song, Jingxuan Li, Huaixin Chang, Kang Chen, Hai Jiang, Yongwei Wu; 2019 IEEE International Conference on Cluster Computing (CLUSTER), 2019
 * RF-RPC: Remote Fetching RPC Paradigm for RDMA-Enabled Network; Yongwei Wu, **Teng Ma**, Maomeng Su, Mingxing Zhang, Kang Chen, Zhenyu Guo; IEEE Transactions on Parallel and Distributed Systems (TPDS), 2018
 * Large Scale Communication in Cloud Needs Hybrid RDMA Schema; **Teng Ma**, Mingxing Zhang, Zhuo Song, Mengxing Liu, Kang Chen, Yongwei Wu, 13th USENIX Symposium on Operating Systems Design and Implementation (OSDI), 2018 (Poster Only)
 * NVM allocator in Disaggregation Era; **Teng Ma**, Mingxing Zhang, Dongbiao He, Kang Chen, Yongwei Wu, 13th USENIX Symposium on Operating Systems Design and Implementation (OSDI), 2018 (Poster Only)
 * Measuring and Optimizing Distributed Array Programs; Mingxing Zhang, Yongwei Wu, Kang Chen, **Teng Ma**, Weimin Zheng; 42nd International Conference on Very Large Data Bases (VLDB), 2016
-* AsymNVM: An Efficient Framework for Implementing Persistent Data Structures on Asymmetric NVM Architecture; **Teng Ma**, Mingxing Zhang, Kang Chen, Xuehai Qian, Zhuo Song, Yongwei Wu; 25th International Conference on Architectural Support for  Programming Languages and Operating Systems (ASPLOS), 2020
-* HybridSkipList: A Case Study of Designing Distributed Data Structure with Hybrid RDMA; **Teng Ma**, Ning Liu and Dongbiao He; 45th Annual International Computer Software and Applications Conference (COMPAC), 2021
-* Thinking More about RDMA Memory Semantics; **Teng Ma**, Kang Chen, Shaonan Ma, Zhuo Song, Yongwei Wu; 2021 IEEE International Conference on Cluster Computing (CLUSTER), 2021
-* CUBIST: High-Quality 360-Degree Video Streaming Services via Tile-based Edge Caching and FoV-Adaptive Prefetching; Dongbiao He, **Teng Ma**, Jinlei Jiang, Cedric Westphal, Guangwen Yang, Shutao Xia and Jose Garcia-Luna-Aceves; 2021 IEEE International Conference on Web Services (ICWS), 2021
 
 <!-- * Zhang, M., Wu, Y., Chen, K., **Ma, T**., & Zheng, W. (2016). Measuring and optimizing distributed array programs. Proceedings of The Vldb Endowment, 9(12), 912-923. -->
 

@@ -1,3 +1,5 @@
+# Teng Ma (马腾)
+
 # Brief Bio
 
 <!-- I was born in Anhui, China. I received my Bachelor degree in computer science from University of Science and Technology Beijng, China in July 2016. Now I am a PhD candidate in Department of Computer Science and Technology, Tsinghua University, China. -->
@@ -38,6 +40,7 @@ My linkedin account is [**here**](https://www.linkedin.com/in/ma-teng-69a0a8115/
 * CUBIST: High-Quality 360-Degree Video Streaming Services via Tile-based Edge Caching and FoV-Adaptive Prefetching; Dongbiao He, **Teng Ma**, Jinlei Jiang, Cedric Westphal, Guangwen Yang, Shutao Xia and Jose Garcia-Luna-Aceves; 2021 IEEE International Conference on Web Services (ICWS), 2021
 * HybridSkipList: A Case Study of Designing Distributed Data Structure with Hybrid RDMA; **Teng Ma**, Ning Liu and Dongbiao He; 45th Annual International Computer Software and Applications Conference (COMPAC), 2021
 * AsymNVM: An Efficient Framework for Implementing Persistent Data Structures on Asymmetric NVM Architecture; **Teng Ma**, Mingxing Zhang, Kang Chen, Xuehai Qian, Zhuo Song, Yongwei Wu; 25th International Conference on Architectural Support for  Programming Languages and Operating Systems (ASPLOS), 2020
+* Systems and Methods for Remote Procedure Call; Kang Chen, Yongwei Wu, Weimin Zheng, Maomeng Su, **Teng Ma**, Mingxing Zhang; US Patent 10-613-992, 2020
 * X-RDMA: Effective RDMA Middleware in Large-scale Production Environments; **Teng Ma**, Tao Ma, Zhuo Song, Jingxuan Li, Huaixin Chang, Kang Chen, Hai Jiang, Yongwei Wu; 2019 IEEE International Conference on Cluster Computing (CLUSTER), 2019
 * RF-RPC: Remote Fetching RPC Paradigm for RDMA-Enabled Network; Yongwei Wu, **Teng Ma**, Maomeng Su, Mingxing Zhang, Kang Chen, Zhenyu Guo; IEEE Transactions on Parallel and Distributed Systems (TPDS), 2018
 * Large Scale Communication in Cloud Needs Hybrid RDMA Schema; **Teng Ma**, Mingxing Zhang, Zhuo Song, Mengxing Liu, Kang Chen, Yongwei Wu, 13th USENIX Symposium on Operating Systems Design and Implementation (OSDI), 2018 (Poster Only)

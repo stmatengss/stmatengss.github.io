@@ -1,6 +1,6 @@
 # Teng Ma (马腾)
 
-# Brief Bio
+<!-- # Brief Bio -->
 
 <!-- I was born in Anhui, China. I received my Bachelor degree in computer science from University of Science and Technology Beijng, China in July 2016. Now I am a PhD candidate in Department of Computer Science and Technology, Tsinghua University, China. -->
 I was born in Anhui, China. I received my Bachelor degree in computer science from University of Science and Technology Beijng, China in July 2016 and my PhD degree in computer science from Tsinghua University, China in June 2021. During my Phd, my research advisors are [Prof. Yongwei Wu](http://madsys.cs.tsinghua.edu.cn/~yongweiwu/) and [Prof. Kang Chen](http://madsys.cs.tsinghua.edu.cn/~kangchen/), and I work closely with [Dr. Mingxing Zhang](http://madsys.cs.tsinghua.edu.cn/~zhangmx/) and [Prof. Xuehai Qian](http://alchem.usc.edu/portal/xuehaiq.html). I have spent half a year as a visiting student at [Prof. Shan Lu's group](http://people.cs.uchicago.edu/~shanlu/) at the University of Chicago.

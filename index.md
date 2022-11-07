@@ -36,10 +36,10 @@ My linkedin account is [**here**](https://www.linkedin.com/in/ma-teng-69a0a8115/
 
 # Publication
 
-* Log-ROC: Log Structured RAID on Open-Channel SSD; **Teng Ma**, Zhitao Li and Ning Liu; IEEE International Conference on Computer Design (ICCD); 2022
 * A Survey of Storage Systems in the RDMA Era; Shaonan Ma\*, **Teng Ma**\*, Kang Chen, Yongwei Wu; IEEE Transactions on Parallel and Distributed Systems (TPDS), 2022 (\*: equally contributions)
 * SeqDLM: a Sequencer-based Distributed Lock Manager for Efficient Shared File Access in a Parallel File System; Qi Chen, Shaonan Ma, Kang Chen, **Teng Ma**, Xin Liu, Dexun Chen, Yongwei Wu, Zuoning Chen; The International Conference for High Performance Computing, Networking, Storage, and Analysis (SC); 2022
 * Zero Overhead Monitoring for Cloud-native Infrastructure using RDMA; Zhe Wang, **Teng Ma**, Linghe Kong, Zhenzao Wen, Jingxuan Li, Zhuo Song, Yang Lu, Yong Yang, and Tao Ma, Guihai Chen, Wei Cao; 2022 USENIX Annual Technical Conference (ATC); 2022
+* Log-ROC: Log Structured RAID on Open-Channel SSD; **Teng Ma**, Zhitao Li and Ning Liu; IEEE International Conference on Computer Design (ICCD); 2022
 * Systems and Methods for Implementing Persistent Data Structures on An Asymmetric Non-volatile Memory Architecture; Kang Chen, Yongwei Wu, Teng Ma, Mingxing Zhang; US Patent 11-237-925, 2022
 * Thinking More about RDMA Memory Semantics; **Teng Ma**, Kang Chen, Shaonan Ma, Zhuo Song, Yongwei Wu; 2021 IEEE International Conference on Cluster Computing (CLUSTER), 2021
 * CUBIST: High-Quality 360-Degree Video Streaming Services via Tile-based Edge Caching and FoV-Adaptive Prefetching; Dongbiao He, **Teng Ma**, Jinlei Jiang, Cedric Westphal, Guangwen Yang, Shutao Xia and Jose Garcia-Luna-Aceves; 2021 IEEE International Conference on Web Services (ICWS), 2021

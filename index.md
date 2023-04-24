@@ -36,6 +36,8 @@ My linkedin account is [**here**](https://www.linkedin.com/in/ma-teng-69a0a8115/
 
 # Publication
 
+* Efficient Scheduler Live Update for Linux Kernel with Modularization; **Teng Ma**, Shanpei Chen, Yihao Wu, Erwei Deng, Zhuo Song, Quan Chen, Minyi Guo; 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), 2023
+* LigBee: Symbol-Level Cross-Technology Communication from LoRa to ZigBee; Zhe Wang, Linghe Kong, Longfei Shangguan, Liang He, Kangjie Xu, Yifeng Cao, Hui Yu, Qiao Xiang, Jiadi Yu, **Teng Ma**, Zhuo Song, Zheng Liu, Guihai Chen; IEEE INFOCOM, 2023
 * A Survey of Storage Systems in the RDMA Era; Shaonan Ma\*, **Teng Ma**\*, Kang Chen, Yongwei Wu; IEEE Transactions on Parallel and Distributed Systems (TPDS), 2022 (\*: equally contributions)
 * SeqDLM: a Sequencer-based Distributed Lock Manager for Efficient Shared File Access in a Parallel File System; Qi Chen, Shaonan Ma, Kang Chen, **Teng Ma**, Xin Liu, Dexun Chen, Yongwei Wu, Zuoning Chen; The International Conference for High Performance Computing, Networking, Storage, and Analysis (SC); 2022
 * Zero Overhead Monitoring for Cloud-native Infrastructure using RDMA; Zhe Wang, **Teng Ma**, Linghe Kong, Zhenzao Wen, Jingxuan Li, Zhuo Song, Yang Lu, Yong Yang, and Tao Ma, Guihai Chen, Wei Cao; 2022 USENIX Annual Technical Conference (ATC); 2022

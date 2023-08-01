@@ -12,10 +12,12 @@ Currently, I work closely with [Dr. Mingxing Zhang](http://madsys.cs.tsinghua.ed
  -->
 
 Currently, I have joined Alibaba as a researcher.
-My research interests include Remote Direct Memory Access (RDMA), Kernel scheduling, Non-Volatile Memory(NVM), Out-of-core Graph Processing, and key-value store systems. 
+My research interests include Remote Direct Memory Access (RDMA), CXL (memory pooling and sharing), Kernel scheduling, Non-Volatile Memory (NVM), Out-of-core Graph Processing, and key-value store systems. 
 
 My blog is [**here**](https://stmatengss.github.io/blog/). 
 My linkedin account is [**here**](https://www.linkedin.com/in/ma-teng-69a0a8115/).
+My Google Scholar is [**here**](https://scholar.google.com/citations?user=8zXo0KMAAAAJ)
+
 
 <!-- ~~I am seeking a visiting scholar position for half year.~~ -->
 

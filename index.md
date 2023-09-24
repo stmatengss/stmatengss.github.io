@@ -30,14 +30,17 @@ My Google Scholar is [**here**](https://scholar.google.com/citations?user=8zXo0K
 * ACM-ICPC Asia Shanghai Regional Contest, Bronze Model, 2015
 * Blue Bridge Cup C/C++, Second Prize, 2014
 * The chess AI contest of China, Second Prize, 2015
-* China IOT(Internet of Things) contest, First Prize, 2014
+* China IOT (Internet of Things) contest, First Prize, 2014
 * Mathematical Contest In Modeling, Honorable Mention, 2015
-* The 5th RDMA Programming Competition, Third Prize, 2017
-* The 1th APAC HPC-AI Competition, First Place, 2018
-* The 6th RDMA Programming Competition, First Prize, 2018
+* The 5th RDMA Programming Competition, Third Prize, 2017 (host by Mellanox Inc)
+* [The 1th APAC HPC-AI Competition](https://www.hpcwire.com/off-the-wire/2018-apac-hpc-ai-student-competition-sharpens-weather-forecast-accuracy-and-image-recognition/), First Place, 2018 (host by HPC-AI Advisory Council && NSCC)
+* [The 6th RDMA Programming Competition](https://www.hpcadvisorycouncil.com/events/2018/rdma/index-ch.php), First Prize, 2018
+* Sohu Scholarship, 2019
+* [Renmin Scholarship](http://media.people.com.cn/n1/2019/1213/c14677-31505487.html), First Prize, 2019
 
 # Publication
 
+* Partial Failure Resilient Memory Management System for (CXL-based) Distributed Shared Memory; \\ Mingxing Zhang\*, **Teng Ma**\*, Jinqi Hua, Zheng Liu, Kang Chen, Ning Ding, Fan Du, Jinlei Jiang, Tao Ma, Yongwei Wu;\\ The 29th ACM Symposium on Operating Systems Principles (SOSP); 2023 (\*: equally contributions))
 * Efficient Scheduler Live Update for Linux Kernel with Modularization; **Teng Ma**, Shanpei Chen, Yihao Wu, Erwei Deng, Zhuo Song, Quan Chen, Minyi Guo; 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), 2023
 * LigBee: Symbol-Level Cross-Technology Communication from LoRa to ZigBee; Zhe Wang, Linghe Kong, Longfei Shangguan, Liang He, Kangjie Xu, Yifeng Cao, Hui Yu, Qiao Xiang, Jiadi Yu, **Teng Ma**, Zhuo Song, Zheng Liu, Guihai Chen; IEEE INFOCOM, 2023
 * A Survey of Storage Systems in the RDMA Era; Shaonan Ma\*, **Teng Ma**\*, Kang Chen, Yongwei Wu; IEEE Transactions on Parallel and Distributed Systems (TPDS), 2022 (\*: equally contributions)

@@ -43,8 +43,8 @@ My Google Scholar is [**here**](https://scholar.google.com/citations?user=8zXo0K
 
 # Publication
 
-* DySched: Relieving Large-Scale RDMA Incast for Cloud-Native Applications; \\Jiejian Wu, Zhe Wang, **Teng Ma**, Linghe Kong, Yutong Liu, Zhuo Song, Jiadi Yu, Yong Yang, Tao Ma, Guihai Chen;\\ 2023 IEEE International Symposium on Parallel \& Distributed Processing with Applications (ISPA); 2023
-* Partial Failure Resilient Memory Management System for (CXL-based) Distributed Shared Memory; \\ Mingxing Zhang*, **Teng Ma** *, Jinqi Hua, Zheng Liu, Kang Chen, Ning Ding, Fan Du, Jinlei Jiang, Tao Ma, Yongwei Wu;\\ The 29th ACM Symposium on Operating Systems Principles (SOSP); 2023 (*: equally contributions))
+* DySched: Relieving Large-Scale RDMA Incast for Cloud-Native Applications; Jiejian Wu, Zhe Wang, **Teng Ma**, Linghe Kong, Yutong Liu, Zhuo Song, Jiadi Yu, Yong Yang, Tao Ma, Guihai Chen; 2023 IEEE International Symposium on Parallel \& Distributed Processing with Applications (ISPA); 2023
+* Partial Failure Resilient Memory Management System for (CXL-based) Distributed Shared Memory; Mingxing Zhang\*, **Teng Ma** \*, Jinqi Hua, Zheng Liu, Kang Chen, Ning Ding, Fan Du, Jinlei Jiang, Tao Ma, Yongwei Wu; The 29th ACM Symposium on Operating Systems Principles (SOSP); 2023 (\*: equally contributions))
 * Efficient Scheduler Live Update for Linux Kernel with Modularization; **Teng Ma**, Shanpei Chen, Yihao Wu, Erwei Deng, Zhuo Song, Quan Chen, Minyi Guo; 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), 2023
 * LigBee: Symbol-Level Cross-Technology Communication from LoRa to ZigBee; Zhe Wang, Linghe Kong, Longfei Shangguan, Liang He, Kangjie Xu, Yifeng Cao, Hui Yu, Qiao Xiang, Jiadi Yu, **Teng Ma**, Zhuo Song, Zheng Liu, Guihai Chen; IEEE INFOCOM, 2023
 * A Survey of Storage Systems in the RDMA Era; Shaonan Ma\*, **Teng Ma**\*, Kang Chen, Yongwei Wu; IEEE Transactions on Parallel and Distributed Systems (TPDS), 2022 (\*: equally contributions)

@@ -37,10 +37,14 @@ My Google Scholar is [**here**](https://scholar.google.com/citations?user=8zXo0K
 * [The 6th RDMA Programming Competition](https://www.hpcadvisorycouncil.com/events/2018/rdma/index-ch.php), First Prize, 2018
 * Sohu Scholarship, 2019
 * [Renmin Scholarship](http://media.people.com.cn/n1/2019/1213/c14677-31505487.html), First Prize, 2019
+* Supported by China Postdoctoral Science Foundation (80,000 RMB), 2023
+* CCF TCSS Outstanding Doctoral Dissertation Award, 2023
+
 
 # Publication
 
-* Partial Failure Resilient Memory Management System for (CXL-based) Distributed Shared Memory; \\ Mingxing Zhang\*, **Teng Ma**\*, Jinqi Hua, Zheng Liu, Kang Chen, Ning Ding, Fan Du, Jinlei Jiang, Tao Ma, Yongwei Wu;\\ The 29th ACM Symposium on Operating Systems Principles (SOSP); 2023 (\*: equally contributions))
+* DySched: Relieving Large-Scale RDMA Incast for Cloud-Native Applications; \\Jiejian Wu, Zhe Wang, **Teng Ma**, Linghe Kong, Yutong Liu, Zhuo Song, Jiadi Yu, Yong Yang, Tao Ma, Guihai Chen;\\ 2023 IEEE International Symposium on Parallel \& Distributed Processing with Applications (ISPA); 2023
+* Partial Failure Resilient Memory Management System for (CXL-based) Distributed Shared Memory; \\ Mingxing Zhang*, **Teng Ma** *, Jinqi Hua, Zheng Liu, Kang Chen, Ning Ding, Fan Du, Jinlei Jiang, Tao Ma, Yongwei Wu;\\ The 29th ACM Symposium on Operating Systems Principles (SOSP); 2023 (*: equally contributions))
 * Efficient Scheduler Live Update for Linux Kernel with Modularization; **Teng Ma**, Shanpei Chen, Yihao Wu, Erwei Deng, Zhuo Song, Quan Chen, Minyi Guo; 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), 2023
 * LigBee: Symbol-Level Cross-Technology Communication from LoRa to ZigBee; Zhe Wang, Linghe Kong, Longfei Shangguan, Liang He, Kangjie Xu, Yifeng Cao, Hui Yu, Qiao Xiang, Jiadi Yu, **Teng Ma**, Zhuo Song, Zheng Liu, Guihai Chen; IEEE INFOCOM, 2023
 * A Survey of Storage Systems in the RDMA Era; Shaonan Ma\*, **Teng Ma**\*, Kang Chen, Yongwei Wu; IEEE Transactions on Parallel and Distributed Systems (TPDS), 2022 (\*: equally contributions)
@@ -60,6 +64,13 @@ My Google Scholar is [**here**](https://scholar.google.com/citations?user=8zXo0K
 * Measuring and Optimizing Distributed Array Programs; Mingxing Zhang, Yongwei Wu, Kang Chen, **Teng Ma**, Weimin Zheng; 42nd International Conference on Very Large Data Bases (VLDB), 2016
 
 <!-- * Zhang, M., Wu, Y., Chen, K., **Ma, T**., & Zheng, W. (2016). Measuring and optimizing distributed array programs. Proceedings of The Vldb Endowment, 9(12), 912-923. -->
+
+# Academic Services
+* FAST, 2023, Artifact Evaluation Committee
+* DASFAA, 2023, Program Committee 
+* ChinaSys, 2023, Program Committee
+* TPDS/TC/ICS, 2017-2023, Reviewer 
+
 
 # Contact
 

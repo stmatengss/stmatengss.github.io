@@ -42,7 +42,9 @@ My Google Scholar is [**here**](https://scholar.google.com/citations?user=8zXo0K
 
 
 # Publication
-
+* HydraRPC: RPC in the CXL Era; **Teng Ma**, Zheng Liu, Chengkun Wei, Jialiang Huang, Youwei Zhuo, Haoyu Li, Ning Zhang, Yijin Guan, Dimin Niu, Mingxing Zhang, Tao Ma; 2024 USENIX Annual Technical Conference (ATC); 2024
+* Diagnosing Application-network Anomalies for Millions of IPs in Production Clouds; Zhe Wang, Huanwu Hu, Linghe Kong, Xinlei Kang, **Teng Ma**, Qiao Xiang, Jingxuan, Yang Lu, Zhuo Song, Peihao Yang, Jiejian Wu, Yong Yang and Tao Ma, Zheng Liu, Xianlong Zeng, Dennis Cai, Guihai Chen; 2024 USENIX Annual Technical Conference (ATC); 2024
+* ZERO+: Monitoring Large-scale Cloud-native Infrastructure using one-sided RDMA; Zhuo Song, Jiejian Wu, **Teng Ma**, Zhe Wang, Linghe Kong, Zhenzao Wen, Jingxuan Li, Yang Lu, Yong Yang, Tao Ma, Zheng Liu, Guihai Chen; IEEE/ACM Transactions on Networking (ToN); 2024
 * DySched: Relieving Large-Scale RDMA Incast for Cloud-Native Applications; Jiejian Wu, Zhe Wang, **Teng Ma**, Linghe Kong, Yutong Liu, Zhuo Song, Jiadi Yu, Yong Yang, Tao Ma, Guihai Chen; 2023 IEEE International Symposium on Parallel \& Distributed Processing with Applications (ISPA); 2023
 * Partial Failure Resilient Memory Management System for (CXL-based) Distributed Shared Memory; Mingxing Zhang\*, **Teng Ma** \*, Jinqi Hua, Zheng Liu, Kang Chen, Ning Ding, Fan Du, Jinlei Jiang, Tao Ma, Yongwei Wu; The 29th ACM Symposium on Operating Systems Principles (SOSP); 2023 (\*: equally contributions))
 * Efficient Scheduler Live Update for Linux Kernel with Modularization; **Teng Ma**, Shanpei Chen, Yihao Wu, Erwei Deng, Zhuo Song, Quan Chen, Minyi Guo; 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), 2023

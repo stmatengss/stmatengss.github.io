@@ -42,6 +42,8 @@ My Google Scholar is [**here**](https://scholar.google.com/citations?user=8zXo0K
 
 
 # Publication
+* TrEnv: Transparently Share Serverless Execution Environments Across Different Functions and Nodes; Jialiang Huang, MingXing Zhang, **Teng Ma**, Zheng Liu, Sixing Lin, Kang Chen, Jinlei Jiang, Xia Liao, Yingdi Shan, Ning Zhang, Mengting Lu, Tao Ma, Haifeng Gong, YongWei Wu; The 30th ACM Symposium on Operating Systems Principles (SOSP); 2024 (Corresponding Author)
+* LogGenius: An Unsupervised Log Parsing Framework with Zero-shot Prompt Engineering; Xian Yu, Shengxi Nong, Dongbiao He, Weijie Zheng, **Teng Ma**, Ning Liu, Jianhui Li and Gaogang Xie; 2024 IEEE International Conference on Web Services (ICWS), 2024
 * HydraRPC: RPC in the CXL Era; **Teng Ma**, Zheng Liu, Chengkun Wei, Jialiang Huang, Youwei Zhuo, Haoyu Li, Ning Zhang, Yijin Guan, Dimin Niu, Mingxing Zhang, Tao Ma; 2024 USENIX Annual Technical Conference (ATC); 2024
 * Diagnosing Application-network Anomalies for Millions of IPs in Production Clouds; Zhe Wang, Huanwu Hu, Linghe Kong, Xinlei Kang, **Teng Ma**, Qiao Xiang, Jingxuan, Yang Lu, Zhuo Song, Peihao Yang, Jiejian Wu, Yong Yang and Tao Ma, Zheng Liu, Xianlong Zeng, Dennis Cai, Guihai Chen; 2024 USENIX Annual Technical Conference (ATC); 2024
 * ZERO+: Monitoring Large-scale Cloud-native Infrastructure using one-sided RDMA; Zhuo Song, Jiejian Wu, **Teng Ma**, Zhe Wang, Linghe Kong, Zhenzao Wen, Jingxuan Li, Yang Lu, Yong Yang, Tao Ma, Zheng Liu, Guihai Chen; IEEE/ACM Transactions on Networking (ToN); 2024

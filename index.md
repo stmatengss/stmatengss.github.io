@@ -39,6 +39,7 @@ My Google Scholar is [**here**](https://scholar.google.com/citations?user=8zXo0K
 * [Renmin Scholarship](http://media.people.com.cn/n1/2019/1213/c14677-31505487.html), First Prize, 2019
 * Supported by China Postdoctoral Science Foundation (80,000 RMB), 2023
 * CCF TCSS Outstanding Doctoral Dissertation Award, 2023
+* ChinaSys Best Poster (5/88), 2024
 
 
 # Publication

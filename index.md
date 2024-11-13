@@ -3,7 +3,7 @@
 <!-- # Brief Bio -->
 
 <!-- I was born in Anhui, China. I received my Bachelor degree in computer science from University of Science and Technology Beijng, China in July 2016. Now I am a PhD candidate in Department of Computer Science and Technology, Tsinghua University, China. -->
-I was born in Anhui, China. I received my Bachelor degree in computer science from University of Science and Technology Beijng, China in July 2016 and my PhD degree in computer science from Tsinghua University, China in June 2021. During my Phd, my research advisors are [Prof. Yongwei Wu](http://madsys.cs.tsinghua.edu.cn/~yongweiwu/) and [Prof. Kang Chen](http://madsys.cs.tsinghua.edu.cn/~kangchen/), and I work closely with [Dr. Mingxing Zhang](http://madsys.cs.tsinghua.edu.cn/~zhangmx/) and [Prof. Xuehai Qian](http://alchem.usc.edu/portal/xuehaiq.html). I have spent half a year as a visiting student at [Prof. Shan Lu's group](http://people.cs.uchicago.edu/~shanlu/) at the University of Chicago.
+I was born in Anhui, China. I received my Bachelor degree in computer science from University of Science and Technology Beijng, China in July 2016 and my PhD degree in computer science from Tsinghua University, China in June 2021. During my PhD, my research advisors are [Prof. Yongwei Wu](http://madsys.cs.tsinghua.edu.cn/~yongweiwu/) and [Prof. Kang Chen](http://madsys.cs.tsinghua.edu.cn/~kangchen/), and I work closely with [Dr. Mingxing Zhang](http://madsys.cs.tsinghua.edu.cn/~zhangmx/) and [Prof. Xuehai Qian](http://alchem.usc.edu/portal/xuehaiq.html). I have spent half a year as a visiting student at [Prof. Shan Lu's group](http://people.cs.uchicago.edu/~shanlu/) at the University of Chicago.
 <!-- I have joined Alibaba as a research intern from Sep 2018 to Dec 2019. -->
 
 <!-- My research advisors are [Prof. Yongwei Wu](http://madsys.cs.tsinghua.edu.cn/~yongweiwu/) and [Prof. Kang Chen](http://madsys.cs.tsinghua.edu.cn/~kangchen/). 
@@ -11,8 +11,9 @@ I was born in Anhui, China. I received my Bachelor degree in computer science fr
 Currently, I work closely with [Dr. Mingxing Zhang](http://madsys.cs.tsinghua.edu.cn/~zhangmx/) and [Prof. Xuehai Qian](http://alchem.usc.edu/portal/xuehaiq.html).
  -->
 
-Currently, I have joined Alibaba as a researcher.
-My research interests include Remote Direct Memory Access (RDMA), CXL (memory pooling and sharing), Kernel scheduling, Non-Volatile Memory (NVM), Out-of-core Graph Processing, and key-value store systems. 
+After obtaining PhD degree, I worked as a postdoctoral researcher at Alibaba from 2021 to 2023, advised by Dr. Zhengyu He and Prof. Zhaoxiang Zhang.
+Currently, I am a researcher in Operating System Lab (OSLab) at Alibaba Cloud.
+My research interests include Kernel Scheduling, Kernel Memory Management, Remote Direct Memory Access (RDMA), CXL (memory pooling and sharing),  Accelerators for Kernel, and Tiered Memory System. 
 
 My blog is [**here**](https://stmatengss.github.io/blog/). 
 My linkedin account is [**here**](https://www.linkedin.com/in/ma-teng-69a0a8115/).
@@ -25,32 +26,62 @@ My Google Scholar is [**here**](https://scholar.google.com/citations?user=8zXo0K
 
 # Awards
 
+* ChinaSys Best Poster (5/88), 2024
+* CCF TCSS Outstanding Doctoral Dissertation Award, 2023
+* Supported by China Postdoctoral Science Foundation (80,000 RMB), 2023
+* AliStar Fellowship Program, 2021
+* [Renmin Scholarship](http://media.people.com.cn/n1/2019/1213/c14677-31505487.html), First Prize, 2019
+* Sohu Scholarship, 2019
+* [The 6th RDMA Programming Competition](https://www.hpcadvisorycouncil.com/events/2018/rdma/index-ch.php), First Prize, 2018
+* [The 1th APAC HPC-AI Competition](https://www.hpcwire.com/off-the-wire/2018-apac-hpc-ai-student-competition-sharpens-weather-forecast-accuracy-and-image-recognition/), First Place, 2018 (host by HPC-AI Advisory Council && NSCC)
+* The 5th RDMA Programming Competition, Third Prize, 2017 (host by Mellanox Inc)
 * National Scholarship, USTB, 2015
 * ACM-ICPC China Shanghai Metropolitan Programming Contest, Bronze Model, 2015
 * ACM-ICPC Asia Shanghai Regional Contest, Bronze Model, 2015
-* Blue Bridge Cup C/C++, Second Prize, 2014
+
+<!-- * Blue Bridge Cup C/C++, Second Prize, 2014
 * The chess AI contest of China, Second Prize, 2015
 * China IOT (Internet of Things) contest, First Prize, 2014
-* Mathematical Contest In Modeling, Honorable Mention, 2015
-* The 5th RDMA Programming Competition, Third Prize, 2017 (host by Mellanox Inc)
-* [The 1th APAC HPC-AI Competition](https://www.hpcwire.com/off-the-wire/2018-apac-hpc-ai-student-competition-sharpens-weather-forecast-accuracy-and-image-recognition/), First Place, 2018 (host by HPC-AI Advisory Council && NSCC)
-* [The 6th RDMA Programming Competition](https://www.hpcadvisorycouncil.com/events/2018/rdma/index-ch.php), First Prize, 2018
-* Sohu Scholarship, 2019
-* [Renmin Scholarship](http://media.people.com.cn/n1/2019/1213/c14677-31505487.html), First Prize, 2019
-* Supported by China Postdoctoral Science Foundation (80,000 RMB), 2023
-* CCF TCSS Outstanding Doctoral Dissertation Award, 2023
-* ChinaSys Best Poster (5/88), 2024
+* Mathematical Contest In Modeling, Honorable Mention, 2015  -->
+
+
+
+
+
+
 
 
 # Publication
-* TrEnv: Transparently Share Serverless Execution Environments Across Different Functions and Nodes; Jialiang Huang, MingXing Zhang, **Teng Ma**, Zheng Liu, Sixing Lin, Kang Chen, Jinlei Jiang, Xia Liao, Yingdi Shan, Ning Zhang, Mengting Lu, Tao Ma, Haifeng Gong, YongWei Wu; The 30th ACM Symposium on Operating Systems Principles (SOSP); 2024 (Corresponding Author)
-* LogGenius: An Unsupervised Log Parsing Framework with Zero-shot Prompt Engineering; Xian Yu, Shengxi Nong, Dongbiao He, Weijie Zheng, **Teng Ma**, Ning Liu, Jianhui Li and Gaogang Xie; 2024 IEEE International Conference on Web Services (ICWS), 2024
 * HydraRPC: RPC in the CXL Era; **Teng Ma**, Zheng Liu, Chengkun Wei, Jialiang Huang, Youwei Zhuo, Haoyu Li, Ning Zhang, Yijin Guan, Dimin Niu, Mingxing Zhang, Tao Ma; 2024 USENIX Annual Technical Conference (ATC); 2024
-* Diagnosing Application-network Anomalies for Millions of IPs in Production Clouds; Zhe Wang, Huanwu Hu, Linghe Kong, Xinlei Kang, **Teng Ma**, Qiao Xiang, Jingxuan, Yang Lu, Zhuo Song, Peihao Yang, Jiejian Wu, Yong Yang and Tao Ma, Zheng Liu, Xianlong Zeng, Dennis Cai, Guihai Chen; 2024 USENIX Annual Technical Conference (ATC); 2024
+* Efficient Scheduler Live Update for Linux Kernel with Modularization; **Teng Ma**, Shanpei Chen, Yihao Wu, Erwei Deng, Zhuo Song, Quan Chen, Minyi Guo; 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), 2023
+* AsymNVM: An Efficient Framework for Implementing Persistent Data Structures on Asymmetric NVM Architecture; **Teng Ma**, Mingxing Zhang, Kang Chen, Xuehai Qian, Zhuo Song, Yongwei Wu; 25th International Conference on Architectural Support for  Programming Languages and Operating Systems (ASPLOS), 2020
+* Partial Failure Resilient Memory Management System for (CXL-based) Distributed Shared Memory; Mingxing Zhang\*, **Teng Ma** \*, Jinqi Hua, Zheng Liu, Kang Chen, Ning Ding, Fan Du, Jinlei Jiang, Tao Ma, Yongwei Wu; The 29th ACM Symposium on Operating Systems Principles (SOSP); 2023 (\*: equally contributions))
+* A Survey of Storage Systems in the RDMA Era; Shaonan Ma\*, **Teng Ma**\*, Kang Chen, Yongwei Wu; IEEE Transactions on Parallel and Distributed Systems (TPDS), 2022 (\*: equally contributions)
+* Log-ROC: Log Structured RAID on Open-Channel SSD; **Teng Ma**, Zhitao Li and Ning Liu; IEEE International Conference on Computer Design (ICCD); 2022
+* Thinking More about RDMA Memory Semantics; **Teng Ma**, Kang Chen, Shaonan Ma, Zhuo Song, Yongwei Wu; 2021 IEEE International Conference on Cluster Computing (CLUSTER), 2021
+* X-RDMA: Effective RDMA Middleware in Large-scale Production Environments; **Teng Ma**, Tao Ma, Zhuo Song, Jingxuan Li, Huaixin Chang, Kang Chen, Hai Jiang, Yongwei Wu; 2019 IEEE International Conference on Cluster Computing (CLUSTER), 2019
+* HybridSkipList: A Case Study of Designing Distributed Data Structure with Hybrid RDMA; **Teng Ma**, Ning Liu and Dongbiao He; 45th Annual International Computer Software and Applications Conference (COMPAC), 2021
+* TrEnv: Transparently Share Serverless Execution Environments Across Different Functions and Nodes; Jialiang Huang, MingXing Zhang, **Teng Ma**, Zheng Liu, Sixing Lin, Kang Chen, Jinlei Jiang, Xia Liao, Yingdi Shan, Ning Zhang, Mengting Lu, Tao Ma, Haifeng Gong, YongWei Wu; The 30th ACM Symposium on Operating Systems Principles (SOSP); 2024 (Corresponding Author)
 * ZERO+: Monitoring Large-scale Cloud-native Infrastructure using one-sided RDMA; Zhuo Song, Jiejian Wu, **Teng Ma**, Zhe Wang, Linghe Kong, Zhenzao Wen, Jingxuan Li, Yang Lu, Yong Yang, Tao Ma, Zheng Liu, Guihai Chen; IEEE/ACM Transactions on Networking (ToN); 2024 (Corresponding Author)
+* Zero Overhead Monitoring for Cloud-native Infrastructure using RDMA; Zhe Wang, **Teng Ma**, Linghe Kong, Zhenzao Wen, Jingxuan Li, Zhuo Song, Yang Lu, Yong Yang, and Tao Ma, Guihai Chen, Wei Cao; 2022 USENIX Annual Technical Conference (ATC); 2022
+* CUBIST: High-Quality 360-Degree Video Streaming Services via Tile-based Edge Caching and FoV-Adaptive Prefetching; Dongbiao He, **Teng Ma**, Jinlei Jiang, Cedric Westphal, Guangwen Yang, Shutao Xia and Jose Garcia-Luna-Aceves; 2021 IEEE International Conference on Web Services (ICWS), 2021
+* RF-RPC: Remote Fetching RPC Paradigm for RDMA-Enabled Network; Yongwei Wu, **Teng Ma**, Maomeng Su, Mingxing Zhang, Kang Chen, Zhenyu Guo; IEEE Transactions on Parallel and Distributed Systems (TPDS), 2018
+* Measuring and Optimizing Distributed Array Programs; Mingxing Zhang, Yongwei Wu, Kang Chen, **Teng Ma**, Weimin Zheng; 42nd International Conference on Very Large Data Bases (VLDB), 2016
+* LogGenius: An Unsupervised Log Parsing Framework with Zero-shot Prompt Engineering; Xian Yu, Shengxi Nong, Dongbiao He, Weijie Zheng, **Teng Ma**, Ning Liu, Jianhui Li and Gaogang Xie; 2024 IEEE International Conference on Web Services (ICWS), 2024
+* Diagnosing Application-network Anomalies for Millions of IPs in Production Clouds; Zhe Wang, Huanwu Hu, Linghe Kong, Xinlei Kang, **Teng Ma**, Qiao Xiang, Jingxuan, Yang Lu, Zhuo Song, Peihao Yang, Jiejian Wu, Yong Yang and Tao Ma, Zheng Liu, Xianlong Zeng, Dennis Cai, Guihai Chen; 2024 USENIX Annual Technical Conference (ATC); 2024
 * DySched: Relieving Large-Scale RDMA Incast for Cloud-Native Applications; Jiejian Wu, Zhe Wang, **Teng Ma**, Linghe Kong, Yutong Liu, Zhuo Song, Jiadi Yu, Yong Yang, Tao Ma, Guihai Chen; 2023 IEEE International Symposium on Parallel \& Distributed Processing with Applications (ISPA); 2023
+* LigBee: Symbol-Level Cross-Technology Communication from LoRa to ZigBee; Zhe Wang, Linghe Kong, Longfei Shangguan, Liang He, Kangjie Xu, Yifeng Cao, Hui Yu, Qiao Xiang, Jiadi Yu, **Teng Ma**, Zhuo Song, Zheng Liu, Guihai Chen; IEEE INFOCOM, 2023
+* SeqDLM: a Sequencer-based Distributed Lock Manager for Efficient Shared File Access in a Parallel File System; Qi Chen, Shaonan Ma, Kang Chen, **Teng Ma**, Xin Liu, Dexun Chen, Yongwei Wu, Zuoning Chen; The International Conference for High Performance Computing, Networking, Storage, and Analysis (SC); 2022
+
+
+<!-- * HydraRPC: RPC in the CXL Era; **Teng Ma**, Zheng Liu, Chengkun Wei, Jialiang Huang, Youwei Zhuo, Haoyu Li, Ning Zhang, Yijin Guan, Dimin Niu, Mingxing Zhang, Tao Ma; 2024 USENIX Annual Technical Conference (ATC); 2024
 * Partial Failure Resilient Memory Management System for (CXL-based) Distributed Shared Memory; Mingxing Zhang\*, **Teng Ma** \*, Jinqi Hua, Zheng Liu, Kang Chen, Ning Ding, Fan Du, Jinlei Jiang, Tao Ma, Yongwei Wu; The 29th ACM Symposium on Operating Systems Principles (SOSP); 2023 (\*: equally contributions))
 * Efficient Scheduler Live Update for Linux Kernel with Modularization; **Teng Ma**, Shanpei Chen, Yihao Wu, Erwei Deng, Zhuo Song, Quan Chen, Minyi Guo; 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), 2023
+* TrEnv: Transparently Share Serverless Execution Environments Across Different Functions and Nodes; Jialiang Huang, MingXing Zhang, **Teng Ma**, Zheng Liu, Sixing Lin, Kang Chen, Jinlei Jiang, Xia Liao, Yingdi Shan, Ning Zhang, Mengting Lu, Tao Ma, Haifeng Gong, YongWei Wu; The 30th ACM Symposium on Operating Systems Principles (SOSP); 2024 (Corresponding Author)
+* ZERO+: Monitoring Large-scale Cloud-native Infrastructure using one-sided RDMA; Zhuo Song, Jiejian Wu, **Teng Ma**, Zhe Wang, Linghe Kong, Zhenzao Wen, Jingxuan Li, Yang Lu, Yong Yang, Tao Ma, Zheng Liu, Guihai Chen; IEEE/ACM Transactions on Networking (ToN); 2024 (Corresponding Author)
+* LogGenius: An Unsupervised Log Parsing Framework with Zero-shot Prompt Engineering; Xian Yu, Shengxi Nong, Dongbiao He, Weijie Zheng, **Teng Ma**, Ning Liu, Jianhui Li and Gaogang Xie; 2024 IEEE International Conference on Web Services (ICWS), 2024
+* Diagnosing Application-network Anomalies for Millions of IPs in Production Clouds; Zhe Wang, Huanwu Hu, Linghe Kong, Xinlei Kang, **Teng Ma**, Qiao Xiang, Jingxuan, Yang Lu, Zhuo Song, Peihao Yang, Jiejian Wu, Yong Yang and Tao Ma, Zheng Liu, Xianlong Zeng, Dennis Cai, Guihai Chen; 2024 USENIX Annual Technical Conference (ATC); 2024
+* DySched: Relieving Large-Scale RDMA Incast for Cloud-Native Applications; Jiejian Wu, Zhe Wang, **Teng Ma**, Linghe Kong, Yutong Liu, Zhuo Song, Jiadi Yu, Yong Yang, Tao Ma, Guihai Chen; 2023 IEEE International Symposium on Parallel \& Distributed Processing with Applications (ISPA); 2023
 * LigBee: Symbol-Level Cross-Technology Communication from LoRa to ZigBee; Zhe Wang, Linghe Kong, Longfei Shangguan, Liang He, Kangjie Xu, Yifeng Cao, Hui Yu, Qiao Xiang, Jiadi Yu, **Teng Ma**, Zhuo Song, Zheng Liu, Guihai Chen; IEEE INFOCOM, 2023
 * A Survey of Storage Systems in the RDMA Era; Shaonan Ma\*, **Teng Ma**\*, Kang Chen, Yongwei Wu; IEEE Transactions on Parallel and Distributed Systems (TPDS), 2022 (\*: equally contributions)
 * SeqDLM: a Sequencer-based Distributed Lock Manager for Efficient Shared File Access in a Parallel File System; Qi Chen, Shaonan Ma, Kang Chen, **Teng Ma**, Xin Liu, Dexun Chen, Yongwei Wu, Zuoning Chen; The International Conference for High Performance Computing, Networking, Storage, and Analysis (SC); 2022
@@ -66,8 +97,7 @@ My Google Scholar is [**here**](https://scholar.google.com/citations?user=8zXo0K
 * RF-RPC: Remote Fetching RPC Paradigm for RDMA-Enabled Network; Yongwei Wu, **Teng Ma**, Maomeng Su, Mingxing Zhang, Kang Chen, Zhenyu Guo; IEEE Transactions on Parallel and Distributed Systems (TPDS), 2018
 * Large Scale Communication in Cloud Needs Hybrid RDMA Schema; **Teng Ma**, Mingxing Zhang, Zhuo Song, Mengxing Liu, Kang Chen, Yongwei Wu, 13th USENIX Symposium on Operating Systems Design and Implementation (OSDI), 2018 (Poster Only)
 * NVM allocator in Disaggregation Era; **Teng Ma**, Mingxing Zhang, Dongbiao He, Kang Chen, Yongwei Wu, 13th USENIX Symposium on Operating Systems Design and Implementation (OSDI), 2018 (Poster Only)
-* Measuring and Optimizing Distributed Array Programs; Mingxing Zhang, Yongwei Wu, Kang Chen, **Teng Ma**, Weimin Zheng; 42nd International Conference on Very Large Data Bases (VLDB), 2016
-
+* Measuring and Optimizing Distributed Array Programs; Mingxing Zhang, Yongwei Wu, Kang Chen, **Teng Ma**, Weimin Zheng; 42nd International Conference on Very Large Data Bases (VLDB), 2016 -->
 <!-- * Zhang, M., Wu, Y., Chen, K., **Ma, T**., & Zheng, W. (2016). Measuring and optimizing distributed array programs. Proceedings of The Vldb Endowment, 9(12), 912-923. -->
 
 # Academic Services

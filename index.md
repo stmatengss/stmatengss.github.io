@@ -52,8 +52,12 @@ My Google Scholar is [**here**](https://scholar.google.com/citations?user=8zXo0K
 
 
 # Publication
-* HydraRPC: RPC in the CXL Era; **Teng Ma**, Zheng Liu, Chengkun Wei, Jialiang Huang, Youwei Zhuo, Haoyu Li, Ning Zhang, Yijin Guan, Dimin Niu, Mingxing Zhang, Tao Ma; 2024 USENIX Annual Technical Conference (ATC); 2024
-* Efficient Scheduler Live Update for Linux Kernel with Modularization; **Teng Ma**, Shanpei Chen, Yihao Wu, Erwei Deng, Zhuo Song, Quan Chen, Minyi Guo; 28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), 2023
+* HydraRPC: RPC in the CXL Era;
+  **Teng Ma**, Zheng Liu, Chengkun Wei, Jialiang Huang, Youwei Zhuo, Haoyu Li, Ning Zhang, Yijin Guan, Dimin Niu, Mingxing Zhang, Tao Ma;
+  2024 USENIX Annual Technical Conference (ATC); 2024
+* Efficient Scheduler Live Update for Linux Kernel with Modularization;
+  **Teng Ma**, Shanpei Chen, Yihao Wu, Erwei Deng, Zhuo Song, Quan Chen, Minyi Guo;
+  28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), 2023
 * AsymNVM: An Efficient Framework for Implementing Persistent Data Structures on Asymmetric NVM Architecture; **Teng Ma**, Mingxing Zhang, Kang Chen, Xuehai Qian, Zhuo Song, Yongwei Wu; 25th International Conference on Architectural Support for  Programming Languages and Operating Systems (ASPLOS), 2020
 * Partial Failure Resilient Memory Management System for (CXL-based) Distributed Shared Memory; Mingxing Zhang\*, **Teng Ma** \*, Jinqi Hua, Zheng Liu, Kang Chen, Ning Ding, Fan Du, Jinlei Jiang, Tao Ma, Yongwei Wu; The 29th ACM Symposium on Operating Systems Principles (SOSP); 2023 (\*: equally contributions))
 * A Survey of Storage Systems in the RDMA Era; Shaonan Ma\*, **Teng Ma**\*, Kang Chen, Yongwei Wu; IEEE Transactions on Parallel and Distributed Systems (TPDS), 2022 (\*: equally contributions)

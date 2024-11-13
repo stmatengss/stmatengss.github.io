@@ -52,21 +52,17 @@ My Google Scholar is [**here**](https://scholar.google.com/citations?user=8zXo0K
 
 
 # Publication
-* HydraRPC: RPC in the CXL Era;
-  **Teng Ma**, Zheng Liu, Chengkun Wei, Jialiang Huang, Youwei Zhuo, Haoyu Li, Ning Zhang, Yijin Guan, Dimin Niu, Mingxing Zhang, Tao Ma;
-  2024 USENIX Annual Technical Conference (ATC); 2024
-* Efficient Scheduler Live Update for Linux Kernel with Modularization;
-  **Teng Ma**, Shanpei Chen, Yihao Wu, Erwei Deng, Zhuo Song, Quan Chen, Minyi Guo;
-  28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), 2023
-* AsymNVM: An Efficient Framework for Implementing Persistent Data Structures on Asymmetric NVM Architecture; **Teng Ma**, Mingxing Zhang, Kang Chen, Xuehai Qian, Zhuo Song, Yongwei Wu; 25th International Conference on Architectural Support for  Programming Languages and Operating Systems (ASPLOS), 2020
-* Partial Failure Resilient Memory Management System for (CXL-based) Distributed Shared Memory; Mingxing Zhang\*, **Teng Ma** \*, Jinqi Hua, Zheng Liu, Kang Chen, Ning Ding, Fan Du, Jinlei Jiang, Tao Ma, Yongwei Wu; The 29th ACM Symposium on Operating Systems Principles (SOSP); 2023 (\*: equally contributions))
-* A Survey of Storage Systems in the RDMA Era; Shaonan Ma\*, **Teng Ma**\*, Kang Chen, Yongwei Wu; IEEE Transactions on Parallel and Distributed Systems (TPDS), 2022 (\*: equally contributions)
-* Log-ROC: Log Structured RAID on Open-Channel SSD; **Teng Ma**, Zhitao Li and Ning Liu; IEEE International Conference on Computer Design (ICCD); 2022
-* Thinking More about RDMA Memory Semantics; **Teng Ma**, Kang Chen, Shaonan Ma, Zhuo Song, Yongwei Wu; 2021 IEEE International Conference on Cluster Computing (CLUSTER), 2021
-* X-RDMA: Effective RDMA Middleware in Large-scale Production Environments; **Teng Ma**, Tao Ma, Zhuo Song, Jingxuan Li, Huaixin Chang, Kang Chen, Hai Jiang, Yongwei Wu; 2019 IEEE International Conference on Cluster Computing (CLUSTER), 2019
-* HybridSkipList: A Case Study of Designing Distributed Data Structure with Hybrid RDMA; **Teng Ma**, Ning Liu and Dongbiao He; 45th Annual International Computer Software and Applications Conference (COMPAC), 2021
-* TrEnv: Transparently Share Serverless Execution Environments Across Different Functions and Nodes; Jialiang Huang, MingXing Zhang, **Teng Ma**, Zheng Liu, Sixing Lin, Kang Chen, Jinlei Jiang, Xia Liao, Yingdi Shan, Ning Zhang, Mengting Lu, Tao Ma, Haifeng Gong, YongWei Wu; The 30th ACM Symposium on Operating Systems Principles (SOSP); 2024 (Corresponding Author)
-* ZERO+: Monitoring Large-scale Cloud-native Infrastructure using one-sided RDMA; Zhuo Song, Jiejian Wu, **Teng Ma**, Zhe Wang, Linghe Kong, Zhenzao Wen, Jingxuan Li, Yang Lu, Yong Yang, Tao Ma, Zheng Liu, Guihai Chen; IEEE/ACM Transactions on Networking (ToN); 2024 (Corresponding Author)
+* HydraRPC: RPC in the CXL Era; <br>**Teng Ma**, Zheng Liu, Chengkun Wei, Jialiang Huang, Youwei Zhuo, Haoyu Li, Ning Zhang, Yijin Guan, Dimin Niu, Mingxing Zhang, Tao Ma; <br>2024 USENIX Annual Technical Conference (ATC); 2024
+* Efficient Scheduler Live Update for Linux Kernel with Modularization; <br>**Teng Ma**, Shanpei Chen, Yihao Wu, Erwei Deng, Zhuo Song, Quan Chen, Minyi Guo; <br>28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (ASPLOS), 2023
+* AsymNVM: An Efficient Framework for Implementing Persistent Data Structures on Asymmetric NVM Architecture; <br>**Teng Ma**, Mingxing Zhang, Kang Chen, Xuehai Qian, Zhuo Song, Yongwei Wu; <br>25th International Conference on Architectural Support for  Programming Languages and Operating Systems (ASPLOS), 2020
+* Partial Failure Resilient Memory Management System for (CXL-based) Distributed Shared Memory; <br>Mingxing Zhang\*, **Teng Ma** \*, Jinqi Hua, Zheng Liu, Kang Chen, Ning Ding, Fan Du, Jinlei Jiang, Tao Ma, Yongwei Wu; <br>The 29th ACM Symposium on Operating Systems Principles (SOSP); 2023 (\*: equally contributions))
+* A Survey of Storage Systems in the RDMA Era; <br>Shaonan Ma\*, **Teng Ma**\*, Kang Chen, Yongwei Wu; <br>IEEE Transactions on Parallel and Distributed Systems (TPDS), 2022 (\*: equally contributions)
+* Log-ROC: Log Structured RAID on Open-Channel SSD; <br>**Teng Ma**, Zhitao Li and Ning Liu; <br>IEEE International Conference on Computer Design (ICCD); 2022
+* Thinking More about RDMA Memory Semantics; <br>**Teng Ma**, Kang Chen, Shaonan Ma, Zhuo Song, Yongwei Wu; <br>2021 IEEE International Conference on Cluster Computing (CLUSTER), 2021
+* X-RDMA: Effective RDMA Middleware in Large-scale Production Environments; <br>**Teng Ma**, Tao Ma, Zhuo Song, Jingxuan Li, Huaixin Chang, Kang Chen, Hai Jiang, Yongwei Wu; <br>2019 IEEE International Conference on Cluster Computing (CLUSTER), 2019
+* HybridSkipList: A Case Study of Designing Distributed Data Structure with Hybrid RDMA; <br>**Teng Ma**, Ning Liu and Dongbiao He; <br>45th Annual International Computer Software and Applications Conference (COMPAC), 2021
+* TrEnv: Transparently Share Serverless Execution Environments Across Different Functions and Nodes; <br>Jialiang Huang, MingXing Zhang, **Teng Ma**, Zheng Liu, Sixing Lin, Kang Chen, Jinlei Jiang, Xia Liao, Yingdi Shan, Ning Zhang, Mengting Lu, Tao Ma, Haifeng Gong, YongWei Wu; <br>The 30th ACM Symposium on Operating Systems Principles (SOSP); 2024 (Corresponding Author)
+* ZERO+: Monitoring Large-scale Cloud-native Infrastructure using one-sided RDMA; <br>Zhuo Song, Jiejian Wu, **Teng Ma**, Zhe Wang, Linghe Kong, Zhenzao Wen, Jingxuan Li, Yang Lu, Yong Yang, Tao Ma, Zheng Liu, Guihai Chen; <br>IEEE/ACM Transactions on Networking (ToN); 2024 (Corresponding Author)
 * Zero Overhead Monitoring for Cloud-native Infrastructure using RDMA; Zhe Wang, **Teng Ma**, Linghe Kong, Zhenzao Wen, Jingxuan Li, Zhuo Song, Yang Lu, Yong Yang, and Tao Ma, Guihai Chen, Wei Cao; 2022 USENIX Annual Technical Conference (ATC); 2022
 * CUBIST: High-Quality 360-Degree Video Streaming Services via Tile-based Edge Caching and FoV-Adaptive Prefetching; Dongbiao He, **Teng Ma**, Jinlei Jiang, Cedric Westphal, Guangwen Yang, Shutao Xia and Jose Garcia-Luna-Aceves; 2021 IEEE International Conference on Web Services (ICWS), 2021
 * RF-RPC: Remote Fetching RPC Paradigm for RDMA-Enabled Network; Yongwei Wu, **Teng Ma**, Maomeng Su, Mingxing Zhang, Kang Chen, Zhenyu Guo; IEEE Transactions on Parallel and Distributed Systems (TPDS), 2018

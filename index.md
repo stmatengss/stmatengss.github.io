@@ -1,4 +1,4 @@
-# Teng Ma (马腾)
+# Bio
 
 <!-- # Brief Bio -->
 

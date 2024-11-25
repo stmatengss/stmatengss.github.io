@@ -68,8 +68,8 @@ My Google Scholar is [**here**](https://scholar.google.com/citations?user=8zXo0K
 * Diagnosing Application-network Anomalies for Millions of IPs in Production Clouds; <br>Zhe Wang, Huanwu Hu, Linghe Kong, Xinlei Kang, **Teng Ma**, Qiao Xiang, Jingxuan, Yang Lu, Zhuo Song, Peihao Yang, Jiejian Wu, Yong Yang and Tao Ma, Zheng Liu, Xianlong Zeng, Dennis Cai, Guihai Chen; <br>2024 USENIX Annual Technical Conference (ATC); 2024
 * DySched: Relieving Large-Scale RDMA Incast for Cloud-Native Applications; <br>Jiejian Wu, Zhe Wang, **Teng Ma**, Linghe Kong, Yutong Liu, Zhuo Song, Jiadi Yu, Yong Yang, Tao Ma, Guihai Chen; <br>2023 IEEE International Symposium on Parallel \& Distributed Processing with Applications (ISPA); 2023
 * LigBee: Symbol-Level Cross-Technology Communication from LoRa to ZigBee; <br>Zhe Wang, Linghe Kong, Longfei Shangguan, Liang He, Kangjie Xu, Yifeng Cao, Hui Yu, Qiao Xiang, Jiadi Yu, **Teng Ma**, Zhuo Song, Zheng Liu, Guihai Chen; <br>IEEE INFOCOM, 2023
+* Clinical Phenotyping Prediction via Auxiliary Task Selection and Adaptive Shared-Space Correction; Xiao Yang, Ning Liu, Jianbo Qiao, Haitao Yuan, **Teng Ma**, Yonghui Xu, Lizhen Cui. CAAI International Conference on Artificial Intelligence; 2022
 * SeqDLM: a Sequencer-based Distributed Lock Manager for Efficient Shared File Access in a Parallel File System; <br>Qi Chen, Shaonan Ma, Kang Chen, **Teng Ma**, Xin Liu, Dexun Chen, Yongwei Wu, Zuoning Chen; <br>The International Conference for High Performance Computing, Networking, Storage, and Analysis (SC); 2022
-* RF-RPC: Remote Fetching RPC Paradigm for RDMA-Enabled Network; <br>Yongwei Wu, **Teng Ma**, Maomeng Su, Mingxing Zhang, Kang Chen, Zhenyu Guo; <br>IEEE Transactions on Parallel and Distributed Systems (TPDS), 2018
 * Measuring and Optimizing Distributed Array Programs; <br>Mingxing Zhang, Yongwei Wu, Kang Chen, **Teng Ma**, Weimin Zheng; <br>42nd International Conference on Very Large Data Bases (VLDB), 2016
 
 

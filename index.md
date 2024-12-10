@@ -105,7 +105,8 @@ My Google Scholar is [**here**](https://scholar.google.com/citations?user=8zXo0K
 # Academic Services
 * PPoPP, 2024, Program Committee
 * FAST, 2023, Artifact Evaluation Committee
-* DASFAA, 2023, Program Committee 
+* DASFAA, 2023/2024, Program Committee
+* IEEE Cluster, 2025, Program Committee
 * ChinaSys, 2023/2024, Program Committee
 * TPDS/TC/ICS, 2017-2023, Reviewer 
 

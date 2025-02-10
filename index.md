@@ -11,7 +11,7 @@ I was born in Anhui, China. I received my Bachelor degree in computer science fr
 Currently, I work closely with [Dr. Mingxing Zhang](http://madsys.cs.tsinghua.edu.cn/~zhangmx/) and [Prof. Xuehai Qian](http://alchem.usc.edu/portal/xuehaiq.html).
  -->
 
-After obtaining PhD degree, I worked as a postdoctoral researcher at Alibaba from 2021 to 2023, advised by Dr. Zhengyu He (CTO of Ant Group) and Prof. Zhaoxiang Zhang. Currently, I am a researcher in Operating System Lab (OSLab) at Alibaba Cloud.
+After obtaining PhD degree, I worked as a postdoctoral researcher at Alibaba from 2021 to 2023, advised by Dr. Zhengyu He (CTO of Ant Group) and Prof. Zhaoxiang Zhang. Currently, I am a researcher (Staff Engineer) in Operating System Lab (OSLab) at Alibaba Cloud.
 
 
 Now I build innovative software systems exploiting new hardware and kernel features in novel architectures such as memory disaggregation and LLM. 

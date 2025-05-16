@@ -60,6 +60,7 @@ My Google Scholar is [**here**](https://scholar.google.com/citations?user=8zXo0K
 * HybridSkipList: A Case Study of Designing Distributed Data Structure with Hybrid RDMA; <br>**Teng Ma**, Ning Liu and Dongbiao He; <br>45th Annual International Computer Software and Applications Conference (**COMPAC**), 2021
 
 # Publication (Corresponding Author)
+* DSA-2LM: A CPU-Free Tiered Memory Architecture with Intel DSA; <br>2024 USENIX Annual Technical Conference (**ATC**); 2024
 * CXL-Interplay: Unraveling and Characterizing CXL Interference in Modern Computer Systems; <br>Shunyu Mao, Jiajun Luo, Yixin Li, Jiapeng Zhou, Weidong Zhang, Zheng Liu, **Teng Ma**\*, Shuwen Deng\*;  <br>62st ACM/IEEE Design Automation Conference (**DAC**); 2025
 * TrEnv: Transparently Share Serverless Execution Environments Across Different Functions and Nodes; <br>Jialiang Huang, MingXing Zhang\*, **Teng Ma**\*, Zheng Liu, Sixing Lin, Kang Chen, Jinlei Jiang, Xia Liao, Yingdi Shan, Ning Zhang, Mengting Lu, Tao Ma, Haifeng Gong, YongWei Wu; <br>The 30th ACM Symposium on Operating Systems Principles (**SOSP**); 2024 (Corresponding Author)
 * ZERO+: Monitoring Large-scale Cloud-native Infrastructure using one-sided RDMA; <br>Zhuo Song, Jiejian Wu, **Teng Ma**\*, Zhe Wang, Linghe Kong\*, Zhenzao Wen, Jingxuan Li, Yang Lu, Yong Yang, Tao Ma, Zheng Liu, Guihai Chen; <br>IEEE/ACM Transactions on Networking (**ToN**); 2024 (Corresponding Author)

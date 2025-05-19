@@ -54,13 +54,14 @@ My Google Scholar is [**here**](https://scholar.google.com/citations?user=8zXo0K
 * Partial Failure Resilient Memory Management System for (CXL-based) Distributed Shared Memory; <br>Mingxing Zhang\*, **Teng Ma** \*, Jinqi Hua\*, Zheng Liu, Kang Chen, Ning Ding, Fan Du, Jinlei Jiang, Tao Ma, Yongwei Wu; <br>The 29th ACM Symposium on Operating Systems Principles (**SOSP**); 2023 (\*: equally contributions))
 * A Survey of Storage Systems in the RDMA Era; <br>Shaonan Ma\*, **Teng Ma**\*, Kang Chen, Yongwei Wu; <br>IEEE Transactions on Parallel and Distributed Systems (**TPDS**), 2022 (\*: equally contributions)
 * RF-RPC: Remote Fetching RPC Paradigm for RDMA-Enabled Network; Yongwei Wu, **Teng Ma**, Maomeng Su, Mingxing Zhang, Kang Chen, Zhenyu Guo; IEEE Transactions on Parallel and Distributed Systems (**TPDS**), 2018 (First Student Author)
+* Utilizing Contrastive Learning for Locating Network Anomalies in Real-time Conferencing Applications, (**ICME**), 2025
 * Log-ROC: Log Structured RAID on Open-Channel SSD; <br>**Teng Ma**, Zhitao Li and Ning Liu; <br>IEEE International Conference on Computer Design (**ICCD**); 2022
 * Thinking More about RDMA Memory Semantics; <br>**Teng Ma**, Kang Chen, Shaonan Ma, Zhuo Song, Yongwei Wu; <br>2021 IEEE International Conference on Cluster Computing (**CLUSTER**), 2021
 * X-RDMA: Effective RDMA Middleware in Large-scale Production Environments; <br>**Teng Ma**, Tao Ma, Zhuo Song, Jingxuan Li, Huaixin Chang, Kang Chen, Hai Jiang, Yongwei Wu; <br>2019 IEEE International Conference on Cluster Computing (**CLUSTER**), 2019
 * HybridSkipList: A Case Study of Designing Distributed Data Structure with Hybrid RDMA; <br>**Teng Ma**, Ning Liu and Dongbiao He; <br>45th Annual International Computer Software and Applications Conference (**COMPAC**), 2021
 
 # Publication (Corresponding Author)
-* DSA-2LM: A CPU-Free Tiered Memory Architecture with Intel DSA; <br>2024 USENIX Annual Technical Conference (**ATC**); 2024
+* DSA-2LM: A CPU-Free Tiered Memory Architecture with Intel DSA; <br>2024 USENIX Annual Technical Conference (**ATC**); 2025
 * CXL-Interplay: Unraveling and Characterizing CXL Interference in Modern Computer Systems; <br>Shunyu Mao, Jiajun Luo, Yixin Li, Jiapeng Zhou, Weidong Zhang, Zheng Liu, **Teng Ma**\*, Shuwen Deng\*;  <br>62st ACM/IEEE Design Automation Conference (**DAC**); 2025
 * TrEnv: Transparently Share Serverless Execution Environments Across Different Functions and Nodes; <br>Jialiang Huang, MingXing Zhang\*, **Teng Ma**\*, Zheng Liu, Sixing Lin, Kang Chen, Jinlei Jiang, Xia Liao, Yingdi Shan, Ning Zhang, Mengting Lu, Tao Ma, Haifeng Gong, YongWei Wu; <br>The 30th ACM Symposium on Operating Systems Principles (**SOSP**); 2024 (Corresponding Author)
 * ZERO+: Monitoring Large-scale Cloud-native Infrastructure using one-sided RDMA; <br>Zhuo Song, Jiejian Wu, **Teng Ma**\*, Zhe Wang, Linghe Kong\*, Zhenzao Wen, Jingxuan Li, Yang Lu, Yong Yang, Tao Ma, Zheng Liu, Guihai Chen; <br>IEEE/ACM Transactions on Networking (**ToN**); 2024 (Corresponding Author)

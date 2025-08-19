@@ -61,12 +61,13 @@ My Google Scholar is [**here**](https://scholar.google.com/citations?user=8zXo0K
 * HybridSkipList: A Case Study of Designing Distributed Data Structure with Hybrid RDMA; <br>**Teng Ma**, Ning Liu and Dongbiao He; <br>45th Annual International Computer Software and Applications Conference (**COMPAC**), 2021
 
 # Publication (Corresponding Author)
-* DSA-2LM: A CPU-Free Tiered Memory Architecture with Intel DSA; <br>2024 USENIX Annual Technical Conference (**ATC**); 2025
+* DSA-2LM: A CPU-Free Tiered Memory Architecture with Intel DSA; <br>Ruili Liu, **Teng Ma**\*, Mingxing Zhang, Jialiang Huang, Yingdi Shan, Zheng Liu, Lingfeng Xiang, Zhen Lin, Hui Lu, and Jia Rao, Kang Chen and Yongwei Wu; <br>2024 USENIX Annual Technical Conference (**ATC**); 2025
 * CXL-Interplay: Unraveling and Characterizing CXL Interference in Modern Computer Systems; <br>Shunyu Mao, Jiajun Luo, Yixin Li, Jiapeng Zhou, Weidong Zhang, Zheng Liu, **Teng Ma**\*, Shuwen Deng\*;  <br>62st ACM/IEEE Design Automation Conference (**DAC**); 2025
 * TrEnv: Transparently Share Serverless Execution Environments Across Different Functions and Nodes; <br>Jialiang Huang, MingXing Zhang\*, **Teng Ma**\*, Zheng Liu, Sixing Lin, Kang Chen, Jinlei Jiang, Xia Liao, Yingdi Shan, Ning Zhang, Mengting Lu, Tao Ma, Haifeng Gong, YongWei Wu; <br>The 30th ACM Symposium on Operating Systems Principles (**SOSP**); 2024 (Corresponding Author)
 * ZERO+: Monitoring Large-scale Cloud-native Infrastructure using one-sided RDMA; <br>Zhuo Song, Jiejian Wu, **Teng Ma**\*, Zhe Wang, Linghe Kong\*, Zhenzao Wen, Jingxuan Li, Yang Lu, Yong Yang, Tao Ma, Zheng Liu, Guihai Chen; <br>IEEE/ACM Transactions on Networking (**ToN**); 2024 (Corresponding Author)
 
 ## Publications (Others) 
+* MemTunnel: a CXL-based Rack-Scale Host Memory Pooling Architecture for Cloud Service; <br> IEEE Transactions on Parallel and Distributed Systems (**TPDS**), 2025
 * RAGNAR: Exploring Volatile-Channel Vulnerabilities on RDMA NIC; <br> Yunpeng Xu, Yuchen Alex Fan, Teng Ma and Shuwen Deng; <br>62st ACM/IEEE Design Automation Conference (**DAC**); 2025
 * Diagnosing Application-network Anomalies for Millions of IPs in Production Clouds; <br>Zhe Wang, Huanwu Hu, Linghe Kong, Xinlei Kang, **Teng Ma**, Qiao Xiang, Jingxuan, Yang Lu, Zhuo Song, Peihao Yang, Jiejian Wu, Yong Yang and Tao Ma, Zheng Liu, Xianlong Zeng, Dennis Cai, Guihai Chen; <br>2024 USENIX Annual Technical Conference (**ATC**); 2024
 * LigBee: Symbol-Level Cross-Technology Communication from LoRa to ZigBee; <br>Zhe Wang, Linghe Kong, Longfei Shangguan, Liang He, Kangjie Xu, Yifeng Cao, Hui Yu, Qiao Xiang, Jiadi Yu, **Teng Ma**, Zhuo Song, Zheng Liu, Guihai Chen; <br>IEEE INFOCOM, 2023
@@ -125,6 +126,7 @@ Phone: (+86) 15652933334
 Email: sima.mt@alibaba-inc.com Or stmatengss@163.com
 
 <!-- Address: Department of Computer Science and Technology, Tsinghua National Laboratory for Information Science and Technology (TNLIST), Tsinghua University, Beijing 100084, China -->
+
 
 
 

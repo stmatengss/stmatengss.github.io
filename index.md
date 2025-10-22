@@ -48,6 +48,8 @@ My Google Scholar is [**here**](https://scholar.google.com/citations?user=8zXo0K
 
 
 # Publication (First Author)
+* LightDSA: Enabling Efficient DSA Through Hardware-Aware Transparent Optimization; <br>Yuansen Wang\*, **Teng Ma**\*, Yuanhui Luo, Dongbiao He, Zheng Liu, Yunpeng Chai;
+<br>**Eurosys**; 2026 (\*: equally contributions)
 * HydraRPC: RPC in the CXL Era; <br>**Teng Ma**, Zheng Liu, Chengkun Wei, Jialiang Huang, Youwei Zhuo, Haoyu Li, Ning Zhang, Yijin Guan, Dimin Niu, Mingxing Zhang, Tao Ma; <br>2024 USENIX Annual Technical Conference (**ATC**); 2024
 * Efficient Scheduler Live Update for Linux Kernel with Modularization; <br>**Teng Ma**, Shanpei Chen, Yihao Wu, Erwei Deng, Zhuo Song, Quan Chen, Minyi Guo; <br>28th ACM International Conference on Architectural Support for Programming Languages and Operating Systems (**ASPLOS**), 2023
 * AsymNVM: An Efficient Framework for Implementing Persistent Data Structures on Asymmetric NVM Architecture; <br>**Teng Ma**, Mingxing Zhang, Kang Chen, Xuehai Qian, Zhuo Song, Yongwei Wu; <br>25th International Conference on Architectural Support for  Programming Languages and Operating Systems (**ASPLOS**), 2020
@@ -61,6 +63,7 @@ My Google Scholar is [**here**](https://scholar.google.com/citations?user=8zXo0K
 * HybridSkipList: A Case Study of Designing Distributed Data Structure with Hybrid RDMA; <br>**Teng Ma**, Ning Liu and Dongbiao He; <br>45th Annual International Computer Software and Applications Conference (**COMPAC**), 2021
 
 # Publication (Corresponding Author)
+* SHMemora: Protective Key-Value Store on Distributed Shared Memory; <br>Luo, Jiajun, Siyu Lin, Yunpeng Xu, Shengwei Liu, Jin Xia, Dong Liu, Zheng Liu, Huanchen Zhang, **Teng Ma**\*, Shuwen Deng\*; <br>42nd IEEE International Conference on Data Engineering (**ICDE**); 2026
 * DSA-2LM: A CPU-Free Tiered Memory Architecture with Intel DSA; <br>Ruili Liu, **Teng Ma**\*, Mingxing Zhang, Jialiang Huang, Yingdi Shan, Zheng Liu, Lingfeng Xiang, Zhen Lin, Hui Lu, and Jia Rao, Kang Chen and Yongwei Wu; <br>2024 USENIX Annual Technical Conference (**ATC**); 2025
 * CXL-Interplay: Unraveling and Characterizing CXL Interference in Modern Computer Systems; <br>Shunyu Mao, Jiajun Luo, Yixin Li, Jiapeng Zhou, Weidong Zhang, Zheng Liu, **Teng Ma**\*, Shuwen Deng\*;  <br>62st ACM/IEEE Design Automation Conference (**DAC**); 2025
 * TrEnv: Transparently Share Serverless Execution Environments Across Different Functions and Nodes; <br>Jialiang Huang, MingXing Zhang\*, **Teng Ma**\*, Zheng Liu, Sixing Lin, Kang Chen, Jinlei Jiang, Xia Liao, Yingdi Shan, Ning Zhang, Mengting Lu, Tao Ma, Haifeng Gong, YongWei Wu; <br>The 30th ACM Symposium on Operating Systems Principles (**SOSP**); 2024 (Corresponding Author)
@@ -126,6 +129,7 @@ Phone: (+86) 15652933334
 Email: sima.mt@alibaba-inc.com Or stmatengss@163.com
 
 <!-- Address: Department of Computer Science and Technology, Tsinghua National Laboratory for Information Science and Technology (TNLIST), Tsinghua University, Beijing 100084, China -->
+
 
 
 

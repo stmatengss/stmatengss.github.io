@@ -11,11 +11,11 @@ I was born in Anhui, China. I received my Bachelor degree in computer science fr
 Currently, I work closely with [Dr. Mingxing Zhang](http://madsys.cs.tsinghua.edu.cn/~zhangmx/) and [Prof. Xuehai Qian](http://alchem.usc.edu/portal/xuehaiq.html).
  -->
 
-After obtaining PhD degree, I worked as a postdoctoral researcher at Alibaba from 2021 to 2023, advised by Dr. Zhengyu He (CTO of Ant Group) and Prof. Zhaoxiang Zhang. Currently, I am a researcher (Staff Engineer) in Operating System Lab (OSLab) at Alibaba Cloud.
+After obtaining PhD degree, I worked as a postdoctoral researcher at Alibaba from 2021 to 2023, advised by Dr. Zhengyu He (CTO of Ant Group) and Prof. Zhaoxiang Zhang. Currently, I am a researcher (Staff Engineer) in Operating System Lab (OSLab) MLSYS group at Alibaba Cloud.
 
 
-Now I build innovative software systems exploiting new hardware and kernel features in novel architectures such as memory disaggregation and LLM. 
-My work has appeared at top systems venues such as SOSP (2), ASPLOS (2), USENIX ATC (4), Eurosys, SC, ICDE, INFOCOM, VLDB, TPDS (3), ToN, etc.
+Now I build innovative software systems exploiting new hardware and kernel features in novel architectures such as memory disaggregation and LLM. Meanwhile, I maintain and contribute to open-source projects including [Mooncake](https://github.com/kvcache-ai/Mooncake), [SGLang](https://github.com/sgl-project/sglang), and [Dynamo](https://github.com/ai-dynamo/dynamo).
+My work has appeared at top systems venues such as SOSP (2), ASPLOS (2), USENIX ATC (4), Eurosys (2), SC, ICDE, INFOCOM, VLDB, TPDS (3), ToN, ToS, etc.
 
 My blog is [**here**](https://stmatengss.github.io/blog/). 
 My linkedin account is [**here**](https://www.linkedin.com/in/ma-teng-69a0a8115/).
@@ -71,6 +71,7 @@ My Google Scholar is [**here**](https://scholar.google.com/citations?user=8zXo0K
 * ZERO+: Monitoring Large-scale Cloud-native Infrastructure using one-sided RDMA; <br>Zhuo Song, Jiejian Wu, **Teng Ma**\*, Zhe Wang, Linghe Kong\*, Zhenzao Wen, Jingxuan Li, Yang Lu, Yong Yang, Tao Ma, Zheng Liu, Guihai Chen; <br>IEEE/ACM Transactions on Networking (**ToN**); 2024 (Corresponding Author)
 
 ## Publications (Others)
+* Bridging the GPU Utilization Gap: Predictive Multi-Dimensional Resource Scheduling for AI Workloads; <br>**Eurosys**; 2026
 * Mooncake: A kvcache-centric disaggregated architecture for llm serving; <br> ACM Transactions on Storage (**ToS**); 2026
 * MemTunnel: a CXL-based Rack-Scale Host Memory Pooling Architecture for Cloud Service; <br> IEEE Transactions on Parallel and Distributed Systems (**TPDS**), 2025
 * RAGNAR: Exploring Volatile-Channel Vulnerabilities on RDMA NIC; <br> Yunpeng Xu, Yuchen Alex Fan, Teng Ma and Shuwen Deng; <br>62st ACM/IEEE Design Automation Conference (**DAC**); 2025
@@ -120,7 +121,7 @@ My Google Scholar is [**here**](https://scholar.google.com/citations?user=8zXo0K
 * DASFAA, 2023/2024, Program Committee
 * IEEE Cluster, 2025, Program Committee
 * ChinaSys, 2023/2024, Program Committee
-* ICME, 2025, Meta-Reviewer (Area Chair)
+* ICME, 2025/2026, Meta-Reviewer (Area Chair)
 * TPDS/TC/ICS/ToS/IEEE Network/ACM Survey, 2017-2023, Reviewer 
 
 
@@ -131,6 +132,7 @@ Phone: (+86) 15652933334
 Email: sima.mt@alibaba-inc.com Or stmatengss@163.com
 
 <!-- Address: Department of Computer Science and Technology, Tsinghua National Laboratory for Information Science and Technology (TNLIST), Tsinghua University, Beijing 100084, China -->
+
 
 
 

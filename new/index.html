@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teng Ma - Academic Homepage</title>
+<meta name="description" content="Teng Ma's academic homepage. Staff Engineer at Alibaba Apsara Lab, working on LLM systems, distributed systems, and high-performance networking.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --accent: #1a5fb4;
+  --accent-light: #3584e4;
+  --text: #1a1a2e;
+  --text-secondary: #555;
+  --text-muted: #888;
+  --bg: #ffffff;
+  --bg-alt: #f8f9fb;
+  --border: #e8e8e8;
+  --tag-bg: #eef2ff;
+  --tag-text: #3b5998;
+}
+html { scroll-behavior: smooth; font-size: 16px; }
+body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: var(--text); background: var(--bg); line-height: 1.7; -webkit-font-smoothing: antialiased; }
+nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; background: rgba(255,255,255,0.88); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
+nav.scrolled { box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+nav .nav-inner { max-width: 960px; margin: 0 auto; padding: 0 24px; display: flex; align-items: center; justify-content: space-between; height: 54px; }
+nav .nav-name { font-weight: 600; font-size: 1.05rem; color: var(--text); text-decoration: none; }
+nav .nav-links { display: flex; gap: 4px; }
+nav .nav-links a { color: var(--text-secondary); text-decoration: none; font-size: 0.84rem; font-weight: 500; padding: 5px 10px; border-radius: 6px; transition: all 0.2s; }
+nav .nav-links a:hover { color: var(--accent); background: var(--tag-bg); }
+.nav-toggle { display: none; background: none; border: none; cursor: pointer; padding: 8px; }
+.nav-toggle svg { width: 22px; height: 22px; stroke: var(--text); }
+.container { max-width: 960px; margin: 0 auto; padding: 0 24px; }
+main { padding-top: 78px; }
+.hero { display: flex; gap: 44px; align-items: flex-start; padding: 44px 0 50px; }
+.hero-photo { flex-shrink: 0; width: 190px; height: 190px; border-radius: 50%; background: linear-gradient(135deg, #e0e7ff, #c7d2fe); display: flex; align-items: center; justify-content: center; font-size: 3.8rem; color: var(--accent); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+.hero-photo img { width: 100%; height: 100%; object-fit: cover; }
+.hero-info { flex: 1; }
+.hero-info h1 { font-size: 2.1rem; font-weight: 700; letter-spacing: -0.03em; line-height: 1.2; margin-bottom: 4px; }
+.hero-info .title { color: var(--text-secondary); font-size: 1.02rem; margin-bottom: 14px; }
+.hero-info .bio { color: var(--text-secondary); font-size: 0.93rem; line-height: 1.75; margin-bottom: 18px; }
+.hero-links { display: flex; flex-wrap: wrap; gap: 7px; }
+.hero-links a { display: inline-flex; align-items: center; gap: 5px; color: var(--accent); text-decoration: none; font-size: 0.85rem; font-weight: 500; padding: 5px 13px; border: 1px solid var(--border); border-radius: 18px; transition: all 0.2s; }
+.hero-links a:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+.hero-links a svg { width: 15px; height: 15px; flex-shrink: 0; }
+section { padding: 36px 0; }
+section + section { border-top: 1px solid var(--border); }
+.section-title { font-size: 1.3rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 24px; color: var(--text); display: flex; align-items: center; gap: 10px; }
+.section-title::after { content: ''; flex: 1; height: 1px; background: var(--border); }
+.stats-row { display: flex; gap: 28px; margin-bottom: 20px; flex-wrap: wrap; }
+.stat-item { text-align: center; }
+.stat-num { font-size: 1.6rem; font-weight: 700; color: var(--accent); }
+.stat-label { font-size: 0.75rem; color: var(--text-muted); font-weight: 500; text-transform: uppercase; letter-spacing: 0.04em; }
+.news-list { list-style: none; }
+.news-item { display: flex; gap: 14px; padding: 9px 0; font-size: 0.9rem; line-height: 1.6; }
+.news-item + .news-item { border-top: 1px solid #f0f0f0; }
+.news-date { flex-shrink: 0; width: 72px; color: var(--text-muted); font-size: 0.8rem; font-weight: 500; }
+.news-content { color: var(--text-secondary); }
+.news-content a { color: var(--accent); text-decoration: none; font-weight: 500; }
+.news-toggle { background: none; border: none; color: var(--accent); font-size: 0.86rem; font-weight: 500; cursor: pointer; padding: 6px 0; margin-top: 4px; }
+.pub-filter { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 20px; }
+.pub-filter button { background: var(--bg-alt); border: 1px solid var(--border); padding: 4px 12px; border-radius: 14px; font-size: 0.8rem; font-weight: 500; color: var(--text-secondary); cursor: pointer; transition: all 0.2s; font-family: inherit; }
+.pub-filter button:hover { border-color: var(--accent-light); color: var(--accent); }
+.pub-filter button.active { background: var(--accent); color: #fff; border-color: var(--accent); }
+.pub-year { font-size: 1.05rem; font-weight: 700; color: var(--text); margin: 24px 0 10px; }
+.pub-year:first-of-type { margin-top: 0; }
+.pub-item { padding: 11px 14px; border-radius: 8px; margin-bottom: 4px; transition: background 0.2s; }
+.pub-item:hover { background: var(--bg-alt); }
+.pub-title { font-weight: 600; font-size: 0.92rem; color: var(--text); line-height: 1.45; margin-bottom: 3px; }
+.pub-authors { font-size: 0.82rem; color: var(--text-secondary); line-height: 1.5; margin-bottom: 3px; }
+.pub-authors .me { font-weight: 600; color: var(--accent); }
+.pub-venue { font-size: 0.8rem; color: var(--text-muted); font-weight: 500; }
+.pub-venue .venue-name { color: var(--accent); font-weight: 600; }
+.pub-badge { display: inline-block; color: #fff; font-size: 0.68rem; font-weight: 600; padding: 1px 7px; border-radius: 9px; margin-left: 5px; vertical-align: middle; }
+.pub-badge.first { background: var(--accent); }
+.pub-badge.co { background: #6a1b9a; }
+.pub-links { margin-top: 5px; display: flex; flex-wrap: wrap; gap: 6px; }
+.pub-links a { font-size: 0.76rem; font-weight: 500; color: var(--accent); text-decoration: none; padding: 2px 9px; border: 1px solid var(--border); border-radius: 10px; transition: all 0.2s; }
+.pub-links a:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
+.project-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 14px; }
+.project-card { border: 1px solid var(--border); border-radius: 10px; padding: 20px; transition: all 0.2s; }
+.project-card:hover { box-shadow: 0 4px 14px rgba(0,0,0,0.05); transform: translateY(-1px); }
+.project-card h3 { font-size: 0.98rem; font-weight: 600; margin-bottom: 3px; display: flex; align-items: center; gap: 7px; }
+.project-card h3 a { color: var(--text); text-decoration: none; }
+.project-card h3 a:hover { color: var(--accent); }
+.project-stars { font-size: 0.76rem; color: var(--text-muted); font-weight: 500; }
+.project-card .project-role { font-size: 0.76rem; font-weight: 600; color: var(--accent); margin-bottom: 6px; }
+.project-card p { font-size: 0.85rem; color: var(--text-secondary); line-height: 1.55; }
+.project-tags { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 10px; }
+.project-tags span { font-size: 0.7rem; font-weight: 500; background: var(--tag-bg); color: var(--tag-text); padding: 2px 7px; border-radius: 7px; }
+.talk-item { padding: 10px 14px; border-radius: 8px; margin-bottom: 4px; transition: background 0.2s; display: flex; gap: 14px; align-items: baseline; }
+.talk-item:hover { background: var(--bg-alt); }
+.talk-date { flex-shrink: 0; width: 90px; font-size: 0.8rem; color: var(--text-muted); font-weight: 500; }
+.talk-info { flex: 1; }
+.talk-title { font-weight: 600; font-size: 0.9rem; color: var(--text); }
+.talk-event { font-size: 0.82rem; color: var(--text-secondary); }
+.timeline { position: relative; padding-left: 18px; }
+.timeline::before { content: ''; position: absolute; left: 3px; top: 8px; bottom: 8px; width: 2px; background: var(--border); }
+.timeline-item { position: relative; padding: 0 0 16px 18px; }
+.timeline-item::before { content: ''; position: absolute; left: -3px; top: 7px; width: 8px; height: 8px; background: var(--accent); border-radius: 50%; border: 2px solid var(--bg); box-shadow: 0 0 0 2px var(--accent); }
+.timeline-date { font-size: 0.76rem; color: var(--text-muted); font-weight: 500; }
+.timeline-title { font-weight: 600; font-size: 0.92rem; }
+.timeline-sub { font-size: 0.85rem; color: var(--text-secondary); }
+.timeline-desc { font-size: 0.83rem; color: var(--text-muted); margin-top: 2px; }
+.awards-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.award-item { display: flex; justify-content: space-between; align-items: baseline; padding: 8px 12px; border-radius: 7px; font-size: 0.88rem; transition: background 0.2s; }
+.award-item:hover { background: var(--bg-alt); }
+.award-name { color: var(--text); font-weight: 500; }
+.award-year { color: var(--text-muted); font-size: 0.8rem; font-weight: 500; flex-shrink: 0; margin-left: 10px; }
+.service-list { columns: 2; column-gap: 36px; list-style: none; }
+.service-list li { padding: 5px 0; font-size: 0.88rem; color: var(--text-secondary); break-inside: avoid; }
+.service-list li strong { color: var(--text); }
+footer { padding: 36px 0; border-top: 1px solid var(--border); text-align: center; font-size: 0.8rem; color: var(--text-muted); }
+@media (max-width: 768px) {
+  .hero { flex-direction: column; align-items: center; text-align: center; gap: 20px; padding: 28px 0; }
+  .hero-photo { width: 150px; height: 150px; }
+  .hero-links { justify-content: center; }
+  .hero-info h1 { font-size: 1.7rem; }
+  nav .nav-links { display: none; position: absolute; top: 54px; left: 0; right: 0; background: rgba(255,255,255,0.97); backdrop-filter: blur(12px); flex-direction: column; padding: 10px 24px; border-bottom: 1px solid var(--border); }
+  nav .nav-links.open { display: flex; }
+  .nav-toggle { display: block; }
+  .awards-grid { grid-template-columns: 1fr; }
+  .service-list { columns: 1; }
+  .project-grid { grid-template-columns: 1fr; }
+  .talk-item { flex-direction: column; gap: 2px; }
+  .talk-date { width: auto; }
+}
+</style>
+</head>
+<body>
+
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="nav-name">Teng Ma</a>
+    <div class="nav-links" id="navLinks">
+      <a href="#about">About</a>
+      <a href="#news">News</a>
+      <a href="#publications">Publications</a>
+      <a href="#projects">Open Source</a>
+      <a href="#talks">Talks</a>
+      <a href="#experience">Experience</a>
+      <a href="#awards">Awards</a>
+      <a href="#service">Service</a>
+    </div>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+      <svg fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/></svg>
+    </button>
+  </div>
+</nav>
+
+<main class="container">
+
+<!-- Hero -->
+<section class="hero" id="about">
+  <div class="hero-photo"><span>TM</span></div>
+  <div class="hero-info">
+    <h1>Teng Ma <span style="font-size:1.3rem;font-weight:400;color:var(--text-muted);">/ 马腾</span></h1>
+    <p class="title">Staff Engineer &amp; Research Leader, Alibaba Apsara Lab</p>
+    <p class="bio">
+      I was born in Anhui, China. I am a Staff Engineer (P8) and Research Leader in the Operating System Lab (OSLab) MLSys group at <strong>Alibaba Cloud</strong>. I received my Ph.D. from <strong>Tsinghua University</strong> (advised by Prof. Yongwei Wu and Prof. Kang Chen, working closely with Dr. Mingxing Zhang and Prof. Xuehai Qian), with postdoctoral research at <strong>CASIA &amp; Alibaba</strong> (advised by Dr. Zhengyu He and Prof. Zhaoxiang Zhang). I spent half a year as a visiting student at Prof. Shan Lu's group at the <strong>University of Chicago</strong>. I build innovative software systems exploiting new hardware and kernel features in novel architectures such as memory disaggregation and LLM. I maintain and contribute to open-source projects including <a href="https://github.com/kvcache-ai/Mooncake" style="color:var(--accent)">Mooncake</a>, <a href="https://github.com/sgl-project/sglang" style="color:var(--accent)">SGLang</a>, <a href="https://github.com/ai-dynamo/dynamo" style="color:var(--accent)">Dynamo</a>, <a href="https://github.com/radixbio/rbg" style="color:var(--accent)">RBG</a>, and <a href="https://github.com/" style="color:var(--accent)">AIGW</a>.
+    </p>
+    <div class="hero-links">
+      <a href="mailto:sima.mt@alibaba-inc.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>Email</a>
+      <a href="https://scholar.google.com/citations?user=8zXo0KMAAAAJ&hl=en" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 24a7 7 0 110-14 7 7 0 010 14zm0-24L0 9.5l4.838 3.94A8 8 0 0112 9a8 8 0 015.162 4.44L22 9.5 12 0z"/></svg>Scholar</a>
+      <a href="https://github.com/stmatengss" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>GitHub</a>
+      <a href="https://www.linkedin.com/in/teng-ma-stmatengss/" target="_blank"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn</a>
+    </div>
+  </div>
+</section>
+
+<!-- News -->
+<section id="news">
+  <h2 class="section-title">News</h2>
+  <div class="stats-row">
+    <div class="stat-item"><div class="stat-num">43+</div><div class="stat-label">Publications</div></div>
+    <div class="stat-item"><div class="stat-num">680+</div><div class="stat-label">Citations</div></div>
+    <div class="stat-item"><div class="stat-num">13</div><div class="stat-label">h-index</div></div>
+    <div class="stat-item"><div class="stat-num">5K+</div><div class="stat-label">GitHub Stars</div></div>
+  </div>
+  <ul class="news-list" id="newsList">
+    <li class="news-item"><span class="news-date">2026.06</span><span class="news-content">Invited talk at <strong>AICon Shanghai 2026</strong>: "记忆感知的大模型KVCache优化".</span></li>
+    <li class="news-item"><span class="news-date">2026.03</span><span class="news-content">Received <strong>OS2ATC Open Source Contribution Award</strong>.</span></li>
+    <li class="news-item"><span class="news-date">2026</span><span class="news-content">3 papers at <strong>EuroSys 2026</strong>, 1 paper at <strong>VLDB 2026</strong>, 1 paper at <strong>ICDE 2026</strong>.</span></li>
+    <li class="news-item"><span class="news-date">2025</span><span class="news-content">Mooncake approved as <a href="https://github.com/kvcache-ai/Mooncake">PyTorch Foundation</a> project.</span></li>
+    <li class="news-item"><span class="news-date">2025</span><span class="news-content">Talks at AICon Shenzhen, CNCC, CCF开源大会, SGLang x MUSA Meetup, GDC 2025.</span></li>
+    <li class="news-item hidden-news"><span class="news-date">2024</span><span class="news-content">Paper at <strong>SOSP 2024</strong>: TrEnv (Corresponding Author).</span></li>
+    <li class="news-item hidden-news"><span class="news-date">2024</span><span class="news-content"><strong>ChinaSys Best Poster</strong> (5/88).</span></li>
+    <li class="news-item hidden-news"><span class="news-date">2023</span><span class="news-content"><strong>CCF TCSS Outstanding Doctoral Dissertation Award</strong>.</span></li>
+    <li class="news-item hidden-news"><span class="news-date">2023</span><span class="news-content">Paper at <strong>SOSP 2023</strong> (co-first author).</span></li>
+  </ul>
+  <button class="news-toggle" id="newsToggle" onclick="toggleNews()">Show more...</button>
+</section>
+
+<!-- Publications -->
+<section id="publications">
+  <h2 class="section-title">Publications</h2>
+  <p style="font-size:0.86rem;color:var(--text-muted);margin-bottom:18px;">
+    43+ papers at top systems venues: SOSP (2), ASPLOS (2), ATC (4), EuroSys (2), VLDB (2), ICDE, TPDS (3), ToN, ToS, DAC (2), CLUSTER (2), SC, INFOCOM.
+    <a href="https://scholar.google.com/citations?user=8zXo0KMAAAAJ&hl=en" style="color:var(--accent);font-weight:500;">Google Scholar</a>.
+  </p>
+  <div class="pub-filter">
+    <button class="active" onclick="filterPubs('all', this)">All</button>
+    <button onclick="filterPubs('llm', this)">LLM Systems</button>
+    <button onclick="filterPubs('cxl', this)">CXL / Memory</button>
+    <button onclick="filterPubs('rdma', this)">RDMA / Network</button>
+    <button onclick="filterPubs('kernel', this)">Kernel / OS</button>
+  </div>
+  <div id="pubList">
+
+    <div class="pub-year">2026</div>
+
+    <div class="pub-item" data-tag="llm"><div class="pub-title">Surviving Partial Rank Failures in Wide Expert-Parallel MoE Inference</div><div class="pub-authors">X Sun, S Chen, P Ma, ..., <span class="me">T Ma</span>, ...</div><div class="pub-venue"><span class="venue-name">arXiv 2026</span></div></div>
+
+    <div class="pub-item" data-tag="llm"><div class="pub-title">ROSE: Rollout On Serving GPUs via Cooperative Elasticity for Agentic RL</div><div class="pub-authors">W Gao, Y Zhao, ..., <span class="me">T Ma</span>, ...</div><div class="pub-venue"><span class="venue-name">arXiv 2026</span></div></div>
+
+    <div class="pub-item" data-tag="kernel"><div class="pub-title">LightDSA: Enabling Efficient DSA Through Hardware-Aware Transparent Optimization</div><div class="pub-authors">Y Wang*, <span class="me">T Ma*</span>, Y Luo, D He, Z Liu, Y Chai</div><div class="pub-venue"><span class="venue-name">EuroSys 2026</span> <span class="pub-badge co">Co-first</span></div></div>
+
+    <div class="pub-item" data-tag="llm"><div class="pub-title">Bridging the GPU Utilization Gap: Predictive Multi-Dimensional Resource Scheduling for AI Workloads</div><div class="pub-authors">Y Lu, D He, <span class="me">T Ma</span>, Z Liu, L Ruan, J Jiang, Y Wu</div><div class="pub-venue"><span class="venue-name">EuroSys 2026</span></div></div>
+
+    <div class="pub-item" data-tag="cxl"><div class="pub-title">Pooling Engram Conditional Memory in Large Language Models using CXL</div><div class="pub-authors">R Ma, <span class="me">T Ma*</span>, Z Su, H Zha, et al.</div><div class="pub-venue"><span class="venue-name">EuroMLSys 2026</span> <span class="pub-badge first">Corresponding</span></div></div>
+
+    <div class="pub-item" data-tag="llm"><div class="pub-title">TENT: A Declarative Slice Spraying Engine for Data Movement in Disaggregated LLM Serving</div><div class="pub-authors">F Ren, R Qin, <span class="me">T Ma</span>, S Cai, et al.</div><div class="pub-venue"><span class="venue-name">FAISys Workshop 2026</span></div></div>
+
+    <div class="pub-item" data-tag="llm"><div class="pub-title">Adaptive Multi-Objective Tiered Storage Configuration for KV Cache in LLM Service</div><div class="pub-authors">X Zheng, Z Wang, R Ma, ..., <span class="me">T Ma</span>, ...</div><div class="pub-venue"><span class="venue-name">arXiv 2026</span></div></div>
+
+    <div class="pub-item" data-tag="cxl"><div class="pub-title">Shard: A Scalable and Resize-Optimized Hash Index on Disaggregated Memory</div><div class="pub-authors">H Zha, <span class="me">T Ma*</span>, B Lu, Y Wang, et al.</div><div class="pub-venue"><span class="venue-name">VLDB 2026</span> <span class="pub-badge first">Corresponding</span></div></div>
+
+    <div class="pub-item" data-tag="cxl"><div class="pub-title">SHMemora: Protective Key-Value Store on Distributed Shared Memory</div><div class="pub-authors">J Luo, S Lin, Y Xu, S Liu, J Xia, D Liu, Z Liu, H Zhang, <span class="me">T Ma*</span>, S Deng*</div><div class="pub-venue"><span class="venue-name">ICDE 2026</span> <span class="pub-badge first">Corresponding</span></div></div>
+
+    <div class="pub-item" data-tag="llm"><div class="pub-title">Mooncake: A KVCache-centric Disaggregated Architecture for LLM Serving</div><div class="pub-authors">R Qin, Z Li, W He, J Cui, H Tang, F Ren, <span class="me">T Ma</span>, S Cai, Y Zhang, M Zhang</div><div class="pub-venue"><span class="venue-name">ACM ToS 2026</span></div><div class="pub-links"><a href="https://github.com/kvcache-ai/Mooncake" target="_blank">Code</a><a href="https://arxiv.org/abs/2407.00079" target="_blank">arXiv</a></div></div>
+
+    <div class="pub-year">2025</div>
+
+    <div class="pub-item" data-tag="llm"><div class="pub-title">Tokencake: A KV-Cache-centric Serving Framework for LLM-based Multi-Agent Applications</div><div class="pub-authors">Z Bian, F Wu, <span class="me">T Ma</span>, Y Zhuo</div><div class="pub-venue"><span class="venue-name">arXiv 2025</span></div></div>
+
+    <div class="pub-item" data-tag="llm"><div class="pub-title">TokenSim: Enabling Hardware and Software Exploration for LLM Inference Systems</div><div class="pub-authors">F Wu, Z Bian, G Duan, T Xu, J Wu, <span class="me">T Ma</span>, Y Yao, R Gong, Y Zhuo</div><div class="pub-venue"><span class="venue-name">APPT 2025</span></div></div>
+
+    <div class="pub-item" data-tag="cxl"><div class="pub-title">MemTunnel: A CXL-based Rack-Scale Host Memory Pooling Architecture for Cloud Service</div><div class="pub-authors">T Guan, Y Guan, Z Du, ..., <span class="me">T Ma</span>, Z Liu, et al.</div><div class="pub-venue"><span class="venue-name">IEEE TPDS 2025</span></div></div>
+
+    <div class="pub-item" data-tag="kernel"><div class="pub-title">DSA-2LM: A CPU-Free Tiered Memory Architecture with Intel DSA</div><div class="pub-authors">R Liu, <span class="me">T Ma*</span>, M Zhang, J Huang, et al.</div><div class="pub-venue"><span class="venue-name">ATC 2025</span> <span class="pub-badge first">Corresponding</span></div></div>
+
+    <div class="pub-item" data-tag="rdma"><div class="pub-title">Utilizing Contrastive Learning for Locating Network Anomalies in Real-time Conferencing</div><div class="pub-authors"><span class="me">T Ma</span>, D He, Z Ming, J Xu, L Cui, Y Chai</div><div class="pub-venue"><span class="venue-name">ICME 2025</span> <span class="pub-badge first">1st Author</span></div></div>
+
+    <div class="pub-item" data-tag="cxl"><div class="pub-title">CXL-Interplay: Unraveling and Characterizing CXL Interference in Modern Computer Systems</div><div class="pub-authors">S Mao, J Luo, ..., Z Liu, <span class="me">T Ma*</span>, S Deng*</div><div class="pub-venue"><span class="venue-name">DAC 2025</span> <span class="pub-badge first">Corresponding</span></div></div>
+
+    <div class="pub-item" data-tag="rdma"><div class="pub-title">RAGNAR: Exploring Volatile-Channel Vulnerabilities on RDMA NIC</div><div class="pub-authors">Y Xu, Y Fan, <span class="me">T Ma</span>, S Deng</div><div class="pub-venue"><span class="venue-name">DAC 2025</span></div></div>
+
+    <div class="pub-year">2024</div>
+
+    <div class="pub-item" data-tag="kernel"><div class="pub-title">TrEnv: Transparently Share Serverless Execution Environments Across Different Functions and Nodes</div><div class="pub-authors">J Huang, M Zhang*, <span class="me">T Ma*</span>, Z Liu, S Lin, K Chen, et al.</div><div class="pub-venue"><span class="venue-name">SOSP 2024</span> <span class="pub-badge first">Corresponding</span></div></div>
+
+    <div class="pub-item" data-tag="cxl"><div class="pub-title">HydraRPC: RPC in the CXL Era</div><div class="pub-authors"><span class="me">T Ma</span>, Z Liu, C Wei, J Huang, Y Zhuo, et al.</div><div class="pub-venue"><span class="venue-name">ATC 2024</span> <span class="pub-badge first">1st Author</span></div></div>
+
+    <div class="pub-item" data-tag="cxl"><div class="pub-title">Revisiting Distributed Memory in the CXL Era</div><div class="pub-authors"><span class="me">T Ma</span>, M Zhang, K Chen, J Huang, Z Liu, Y Wu</div><div class="pub-venue"><span class="venue-name">HotInfra 2024</span> <span class="pub-badge first">1st Author</span></div></div>
+
+    <div class="pub-item" data-tag="rdma"><div class="pub-title">ZERO+: Monitoring Large-Scale Cloud-Native Infrastructure Using One-Sided RDMA</div><div class="pub-authors">Z Song, J Wu, <span class="me">T Ma*</span>, Z Wang, L Kong, et al.</div><div class="pub-venue"><span class="venue-name">IEEE/ACM ToN 2024</span> <span class="pub-badge first">Corresponding</span></div></div>
+
+    <div class="pub-item" data-tag="rdma"><div class="pub-title">Diagnosing Application-network Anomalies for Millions of IPs in Production Clouds</div><div class="pub-authors">Z Wang, H Hu, L Kong, ..., <span class="me">T Ma</span>, et al.</div><div class="pub-venue"><span class="venue-name">ATC 2024</span></div></div>
+
+    <div class="pub-item" data-tag="kernel"><div class="pub-title">LogGenius: An Unsupervised Log Parsing Framework with Zero-shot Prompt Engineering</div><div class="pub-authors">X Yu, S Nong, D He, W Zheng, <span class="me">T Ma</span>, N Liu, J Li, G Xie</div><div class="pub-venue"><span class="venue-name">ICWS 2024</span></div></div>
+
+    <div class="pub-year">2023</div>
+
+    <div class="pub-item" data-tag="cxl"><div class="pub-title">Partial Failure Resilient Memory Management System for (CXL-based) Distributed Shared Memory</div><div class="pub-authors">M Zhang*, <span class="me">T Ma*</span>, J Hua, Z Liu, K Chen, et al.</div><div class="pub-venue"><span class="venue-name">SOSP 2023</span> <span class="pub-badge co">Co-first</span></div></div>
+
+    <div class="pub-item" data-tag="kernel"><div class="pub-title">Efficient Scheduler Live Update for Linux Kernel with Modularization</div><div class="pub-authors"><span class="me">T Ma</span>, S Chen, Y Wu, E Deng, Z Song, Q Chen, M Guo</div><div class="pub-venue"><span class="venue-name">ASPLOS 2023</span> <span class="pub-badge first">1st Author</span></div></div>
+
+    <div class="pub-item" data-tag="rdma"><div class="pub-title">DySched: Relieving Large-Scale RDMA Incast for Cloud-Native Applications</div><div class="pub-authors">J Wu, Z Wang, <span class="me">T Ma</span>, L Kong, et al.</div><div class="pub-venue"><span class="venue-name">ISPA 2023</span></div></div>
+
+    <div class="pub-item" data-tag="rdma"><div class="pub-title">LigBee: Symbol-Level Cross-Technology Communication from LoRa to ZigBee</div><div class="pub-authors">Z Wang, L Kong, ..., <span class="me">T Ma</span>, Z Song, Z Liu, G Chen</div><div class="pub-venue"><span class="venue-name">IEEE INFOCOM 2023</span></div></div>
+
+    <div class="pub-year">2022</div>
+
+    <div class="pub-item" data-tag="rdma"><div class="pub-title">A Survey of Storage Systems in the RDMA Era</div><div class="pub-authors">S Ma*, <span class="me">T Ma*</span>, K Chen, Y Wu</div><div class="pub-venue"><span class="venue-name">IEEE TPDS 2022</span> <span class="pub-badge co">Co-first</span></div></div>
+
+    <div class="pub-item" data-tag="rdma"><div class="pub-title">Zero Overhead Monitoring for Cloud-native Infrastructure using RDMA</div><div class="pub-authors">Z Wang, <span class="me">T Ma</span>, L Kong, et al.</div><div class="pub-venue"><span class="venue-name">ATC 2022</span></div></div>
+
+    <div class="pub-item" data-tag="kernel"><div class="pub-title">Log-ROC: Log Structured RAID on Open-Channel SSD</div><div class="pub-authors"><span class="me">T Ma</span>, Z Li, N Liu</div><div class="pub-venue"><span class="venue-name">ICCD 2022</span> <span class="pub-badge first">1st Author</span></div></div>
+
+    <div class="pub-item" data-tag="kernel"><div class="pub-title">SeqDLM: A Sequencer-based Distributed Lock Manager for Efficient Shared File Access</div><div class="pub-authors">Q Chen, S Ma, K Chen, <span class="me">T Ma</span>, X Liu, D Chen, Y Wu, Z Chen</div><div class="pub-venue"><span class="venue-name">SC 2022</span></div></div>
+
+    <div class="pub-year">2021</div>
+
+    <div class="pub-item" data-tag="rdma"><div class="pub-title">Thinking More about RDMA Memory Semantics</div><div class="pub-authors"><span class="me">T Ma</span>, K Chen, S Ma, Z Song, Y Wu</div><div class="pub-venue"><span class="venue-name">CLUSTER 2021</span> <span class="pub-badge first">1st Author</span></div></div>
+
+    <div class="pub-item" data-tag="rdma"><div class="pub-title">HybridSkipList: A Case Study of Designing Distributed Data Structure with Hybrid RDMA</div><div class="pub-authors"><span class="me">T Ma</span>, N Liu, D He</div><div class="pub-venue"><span class="venue-name">COMPSAC 2021</span> <span class="pub-badge first">1st Author</span></div></div>
+
+    <div class="pub-item" data-tag="rdma"><div class="pub-title">CUBIST: High-Quality 360-Degree Video Streaming via Tile-based Edge Caching</div><div class="pub-authors">D He, <span class="me">T Ma</span>, J Jiang, C Westphal, et al.</div><div class="pub-venue"><span class="venue-name">ICWS 2021</span></div></div>
+
+    <div class="pub-year">2020</div>
+
+    <div class="pub-item" data-tag="kernel"><div class="pub-title">AsymNVM: An Efficient Framework for Implementing Persistent Data Structures on Asymmetric NVM Architecture</div><div class="pub-authors"><span class="me">T Ma</span>, M Zhang, K Chen, X Qian, Z Song, Y Wu</div><div class="pub-venue"><span class="venue-name">ASPLOS 2020</span> <span class="pub-badge first">1st Author</span></div></div>
+
+    <div class="pub-year">2019</div>
+
+    <div class="pub-item" data-tag="rdma"><div class="pub-title">X-RDMA: Effective RDMA Middleware in Large-scale Production</div><div class="pub-authors"><span class="me">T Ma</span>, T Ma, Z Song, J Li, H Chang, K Chen, H Jiang, Y Wu</div><div class="pub-venue"><span class="venue-name">CLUSTER 2019</span> <span class="pub-badge first">1st Author</span></div></div>
+
+    <div class="pub-year">2018</div>
+
+    <div class="pub-item" data-tag="rdma"><div class="pub-title">RF-RPC: Remote Fetching RPC Paradigm for RDMA-Enabled Network</div><div class="pub-authors">Y Wu, <span class="me">T Ma</span>, M Su, M Zhang, K Chen, Z Guo</div><div class="pub-venue"><span class="venue-name">IEEE TPDS 2018</span></div></div>
+
+    <div class="pub-item" data-tag="rdma"><div class="pub-title">Large Scale Communication in Cloud Needs Hybrid RDMA Schema</div><div class="pub-authors"><span class="me">T Ma</span>, M Zhang, Z Song, M Liu, K Chen, Y Wu</div><div class="pub-venue"><span class="venue-name">OSDI 2018 (Poster)</span> <span class="pub-badge first">1st Author</span></div></div>
+
+    <div class="pub-item" data-tag="kernel"><div class="pub-title">NVM Allocator in Disaggregation Era</div><div class="pub-authors"><span class="me">T Ma</span>, M Zhang, D He, K Chen, Y Wu</div><div class="pub-venue"><span class="venue-name">OSDI 2018 (Poster)</span> <span class="pub-badge first">1st Author</span></div></div>
+
+    <div class="pub-year">2016</div>
+
+    <div class="pub-item" data-tag="kernel"><div class="pub-title">Measuring and Optimizing Distributed Array Programs</div><div class="pub-authors">M Zhang, Y Wu, K Chen, <span class="me">T Ma</span>, W Zheng</div><div class="pub-venue"><span class="venue-name">VLDB 2016</span></div></div>
+
+  </div>
+</section>
+
+<!-- Open Source -->
+<section id="projects">
+  <h2 class="section-title">Open Source</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <h3><a href="https://github.com/kvcache-ai/Mooncake" target="_blank">Mooncake</a> <span class="project-stars">5K+</span></h3>
+      <div class="project-role">Maintainer &middot; PyTorch Foundation Project</div>
+      <p>KVCache-centric disaggregated architecture for LLM serving. 172 contributors. Adopted by Alibaba, Ant, JD, Tencent, iFLYTEK, Meituan.</p>
+      <div class="project-tags"><span>LLM Inference</span><span>KV Cache</span><span>Disaggregation</span><span>RDMA</span></div>
+    </div>
+    <div class="project-card">
+      <h3><a href="https://github.com/sgl-project/sglang" target="_blank">SGLang</a></h3>
+      <div class="project-role">Committer &middot; 6K+ LOC</div>
+      <p>High-performance LLM serving. Co-designed PD/EPD Disaggregation, HiCache, Checkpoint Engine, Sparse KVCache.</p>
+      <div class="project-tags"><span>LLM Serving</span><span>HiCache</span><span>PD Disagg</span></div>
+    </div>
+    <div class="project-card">
+      <h3><a href="https://github.com/ai-dynamo/dynamo" target="_blank">Dynamo</a></h3>
+      <div class="project-role">Committer &middot; NVIDIA</div>
+      <p>NVIDIA's inference framework. Transfer Engine integration for training-inference heterogeneous communication.</p>
+      <div class="project-tags"><span>NVIDIA</span><span>Inference</span><span>Elastic EP</span></div>
+    </div>
+    <div class="project-card">
+      <h3><a href="https://github.com/" target="_blank">RBG &amp; AIGW</a></h3>
+      <div class="project-role">Committer</div>
+      <p>AI serving gateway and routing. Designed the full AI serving stack (SGLang + Mooncake + AIGW + RBG), recognized as "Most Influential Open Source Project" by InfoQ.</p>
+      <div class="project-tags"><span>AI Gateway</span><span>Routing</span><span>InfoQ</span></div>
+    </div>
+    <div class="project-card">
+      <h3><a href="https://lmsys.org" target="_blank">LMSys Projects</a></h3>
+      <div class="project-role">(Co)Lead Multiple Projects</div>
+      <p>HiCache, PD Disaggregation, EPD Disaggregation, Chunked Pipeline Parallel, rfork, GB200 Deployment, Kimi K2.</p>
+      <div class="project-tags"><span>LMSys Blog</span><span>Production</span></div>
+    </div>
+    <div class="project-card">
+      <h3><a href="#">Contributor Projects</a></h3>
+      <div class="project-role">Contributor &middot; VERL, LMCache, vLLM, LMDeploy, ROLL, Checkpoint Engine</div>
+      <p>End-to-end training frameworks, KV cache connectors, and inference engine integrations across the LLM ecosystem.</p>
+      <div class="project-tags"><span>Training</span><span>vLLM</span><span>RL</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Talks -->
+<section id="talks">
+  <h2 class="section-title">Talks &amp; Presentations</h2>
+  <div class="talk-item"><span class="talk-date">2026.06</span><div class="talk-info"><div class="talk-title">记忆感知的大模型KVCache优化</div><div class="talk-event">AICon 全球人工智能开发与应用大会 &middot; Shanghai</div></div></div>
+  <div class="talk-item"><span class="talk-date">2026.03</span><div class="talk-info"><div class="talk-title">圆桌主持：智算新生态 — 异构AI算力底座如何驱动大模型全场景落地</div><div class="talk-event">龙蜥 x SGLang 智算沙龙 (OpenAnolis x SGLang MeetUp) &middot; Shanghai</div></div></div>
+  <div class="talk-item"><span class="talk-date">2025.10</span><div class="talk-info"><div class="talk-title">从同构走向分离的大模型推理系统</div><div class="talk-event">CNCC 2025 开源AI基础设施论坛</div></div></div>
+  <div class="talk-item"><span class="talk-date">2025.08</span><div class="talk-info"><div class="talk-title">Mooncake：面向长上下文的KVCache中心化推理优化方案</div><div class="talk-event">AICon 全球人工智能开发与应用大会 &middot; Shenzhen</div></div></div>
+  <div class="talk-item"><span class="talk-date">2025.08</span><div class="talk-info"><div class="talk-title">AI推理系统演进下的基础软件与开源生态</div><div class="talk-event">CCF 中国开源大会 &middot; Shanghai</div></div></div>
+  <div class="talk-item"><span class="talk-date">2025.05</span><div class="talk-info"><div class="talk-title">Mooncake项目最新进展</div><div class="talk-event">SGLang x MUSA Meetup (Moore Threads) &middot; Beijing</div></div></div>
+  <div class="talk-item"><span class="talk-date">2025.02</span><div class="talk-info"><div class="talk-title">SGLang 和 LMCache 基于 Mooncake 实现高效PD分离框架</div><div class="talk-event">GDC 2025 全球开发者先锋大会 &middot; Shanghai</div></div></div>
+  <div class="talk-item"><span class="talk-date">2024.12</span><div class="talk-info"><div class="talk-title">Revisiting Distributed Memory in the CXL Era</div><div class="talk-event">UT Arlington, TX, USA</div></div></div>
+  <div class="talk-item"><span class="talk-date">2024.07</span><div class="talk-info"><div class="talk-title">HydraRPC: RPC in the CXL Era</div><div class="talk-event">SAMSUNG &middot; San Jose, CA, USA</div></div></div>
+  <div class="talk-item"><span class="talk-date">2023.03</span><div class="talk-info"><div class="talk-title">Efficient Scheduler Live Update for Linux Kernel with Modularization</div><div class="talk-event">ASPLOS 2023 &middot; Vancouver, Canada</div></div></div>
+  <div class="talk-item"><span class="talk-date">2022.05</span><div class="talk-info"><div class="talk-title">Plugsched: A Safe and Efficient Live Update Approach for Cloud OS Scheduler</div><div class="talk-event">ChinaSys 2022 &middot; Guiyang</div></div></div>
+  <div class="talk-item"><span class="talk-date">2020.09</span><div class="talk-info"><div class="talk-title">非对称NVM架构上的持久化数据结构设计</div><div class="talk-event">夏培肃青年论坛 &middot; CAS, Beijing</div></div></div>
+  <div class="talk-item"><span class="talk-date">2020.03</span><div class="talk-info"><div class="talk-title">AsymNVM: Persistent Data Structures on Asymmetric NVM Architecture</div><div class="talk-event">ASPLOS 2020 &middot; Lausanne, Switzerland</div></div></div>
+  <div class="talk-item"><span class="talk-date">2019.09</span><div class="talk-info"><div class="talk-title">X-RDMA: Effective RDMA Middleware in Large-scale Production</div><div class="talk-event">IEEE CLUSTER 2019 &middot; Albuquerque, USA</div></div></div>
+  <div class="talk-item"><span class="talk-date">2018.10</span><div class="talk-info"><div class="talk-title">Large Scale Communication in Cloud Needs Hybrid RDMA Schema</div><div class="talk-event">OSDI 2018 &middot; Carlsbad, USA</div></div></div>
+  <div class="talk-item"><span class="talk-date">2018.08</span><div class="talk-info"><div class="talk-title">Reports of HPC-AI Competition</div><div class="talk-event">NSCC &middot; Singapore</div></div></div>
+</section>
+
+<!-- Experience -->
+<section id="experience">
+  <h2 class="section-title">Experience</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="timeline-date">Dec 2023 &ndash; Present</div>
+      <div class="timeline-title">Staff Engineer (P8), Research Leader &middot; Alibaba Apsara Lab</div>
+      <div class="timeline-sub">OSLab, MLSys &middot; Beijing</div>
+      <div class="timeline-desc">Leading LLM training/inference infrastructure. Managing 8-person engineering team.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">Jun 2021 &ndash; Dec 2023</div>
+      <div class="timeline-title">Senior Engineer (P7) &middot; Alibaba DAMO Academy</div>
+      <div class="timeline-sub">OSLab, MLSys &middot; Beijing</div>
+      <div class="timeline-desc">Leveraging new hardware (RDMA/NVM/CXL/DSA) for Function Computing &amp; LLM Serving.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">Jul 2021 &ndash; Dec 2023</div>
+      <div class="timeline-title">Postdoc &middot; Institute of Automation, CAS &amp; Alibaba</div>
+      <div class="timeline-sub">Advisors: Prof. Zhaoxiang Zhang &amp; Dr. Zhengyu He (Ant Group CTO)</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">Sep 2018 &ndash; Nov 2019</div>
+      <div class="timeline-title">Research Intern &middot; Alibaba Inc.</div>
+      <div class="timeline-sub">Designed RDMA middleware (X-RDMA). 3000+ node deployment in Alibaba Cloud.</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">Sep 2016 &ndash; Jun 2021</div>
+      <div class="timeline-title">Ph.D. in Computer Science &middot; Tsinghua University</div>
+      <div class="timeline-sub">Advisors: Prof. Yongwei Wu (IEEE Fellow) &amp; Prof. Kang Chen</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">Jan 2020 &ndash; May 2020</div>
+      <div class="timeline-title">Visiting Ph.D. Student &middot; University of Chicago</div>
+      <div class="timeline-sub">Advisor: Prof. Shan Lu</div>
+    </div>
+    <div class="timeline-item">
+      <div class="timeline-date">Sep 2012 &ndash; Jun 2016</div>
+      <div class="timeline-title">B.S. in Computer Science &middot; USTB</div>
+      <div class="timeline-sub">University of Science and Technology Beijing</div>
+    </div>
+  </div>
+</section>
+
+<!-- Awards -->
+<section id="awards">
+  <h2 class="section-title">Honors &amp; Awards</h2>
+  <div class="awards-grid">
+    <div class="award-item"><span class="award-name">OS2ATC Open Source Contribution Award</span><span class="award-year">2026</span></div>
+    <div class="award-item"><span class="award-name">ChinaSys Best Poster (5/88)</span><span class="award-year">2024</span></div>
+    <div class="award-item"><span class="award-name">CCF TCSS Outstanding Doctoral Dissertation</span><span class="award-year">2023</span></div>
+    <div class="award-item"><span class="award-name">China Postdoctoral Science Foundation (80K RMB)</span><span class="award-year">2023</span></div>
+    <div class="award-item"><span class="award-name">AliStar Fellowship</span><span class="award-year">2021</span></div>
+    <div class="award-item"><span class="award-name">Top 10 Research Intern, Alibaba</span><span class="award-year">2020</span></div>
+    <div class="award-item"><span class="award-name">Huawei Scholarship</span><span class="award-year">2020</span></div>
+    <div class="award-item"><span class="award-name">Renmin Scholarship (First Prize)</span><span class="award-year">2019</span></div>
+    <div class="award-item"><span class="award-name">Sohu Scholarship</span><span class="award-year">2019</span></div>
+    <div class="award-item"><span class="award-name">1st Prize, 6th RDMA Programming Competition</span><span class="award-year">2018</span></div>
+    <div class="award-item"><span class="award-name">1st Place, APAC HPC-AI Competition</span><span class="award-year">2018</span></div>
+    <div class="award-item"><span class="award-name">3rd Prize, 5th RDMA Programming Competition</span><span class="award-year">2017</span></div>
+    <div class="award-item"><span class="award-name">National Scholarship</span><span class="award-year">2015</span></div>
+    <div class="award-item"><span class="award-name">Bronze, ACM-ICPC Asia Shanghai Regional</span><span class="award-year">2015</span></div>
+  </div>
+</section>
+
+<!-- Service -->
+<section id="service">
+  <h2 class="section-title">Academic Service</h2>
+  <ul class="service-list">
+    <li><strong>ICME 2025/2026</strong> &mdash; Meta-Reviewer (Area Chair)</li>
+    <li><strong>IEEE ICPP 2026</strong> &mdash; Program Committee</li>
+    <li><strong>IEEE Cluster 2025</strong> &mdash; Program Committee</li>
+    <li><strong>PPoPP 2024</strong> &mdash; Program Committee</li>
+    <li><strong>FAST 2023</strong> &mdash; Artifact Evaluation Committee</li>
+    <li><strong>DASFAA 2023/24/25</strong> &mdash; Program Committee</li>
+    <li><strong>ChinaSys 2023/24/25</strong> &mdash; PC / Session Chair</li>
+    <li><strong>Reviewer</strong> &mdash; TPDS, TC, ICS, ToS, IEEE Network, ACM Survey</li>
+    <li><strong>CCF</strong> &mdash; Executive Committee: Big Data, Distributed Systems, Open Source</li>
+  </ul>
+
+  <h3 style="font-size:1rem;font-weight:600;margin:24px 0 12px;">Patents</h3>
+  <p style="font-size:0.88rem;color:var(--text-secondary);line-height:1.7;">
+    US Patent 10,613,992 &middot; US Patent 11,237,925 &middot; CN202410712069 &middot; CN202311072436 &middot; CN202310271211 &middot; CN202211510303 &middot; CN202210682464 &middot; CN202210557119 &middot; CN202310573810 &middot; CN202010427533
+  </p>
+</section>
+
+</main>
+
+<footer>
+  <div class="container">&copy; 2025 Teng Ma. Last updated May 2026.</div>
+</footer>
+
+<script>
+window.addEventListener('scroll', () => { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 10); });
+document.getElementById('navToggle').addEventListener('click', () => { document.getElementById('navLinks').classList.toggle('open'); });
+document.querySelectorAll('.nav-links a').forEach(a => { a.addEventListener('click', () => { document.getElementById('navLinks').classList.remove('open'); }); });
+let newsExpanded = false;
+function toggleNews() {
+  newsExpanded = !newsExpanded;
+  document.querySelectorAll('.hidden-news').forEach(el => { el.style.display = newsExpanded ? 'flex' : 'none'; });
+  document.getElementById('newsToggle').textContent = newsExpanded ? 'Show less' : 'Show more...';
+}
+document.querySelectorAll('.hidden-news').forEach(el => { el.style.display = 'none'; });
+function filterPubs(tag, btn) {
+  document.querySelectorAll('.pub-filter button').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  document.querySelectorAll('.pub-item').forEach(el => { el.style.display = (tag === 'all' || el.dataset.tag === tag) ? '' : 'none'; });
+  document.querySelectorAll('.pub-year').forEach(yearEl => {
+    let next = yearEl.nextElementSibling, hasVisible = false;
+    while (next && !next.classList.contains('pub-year')) { if (next.classList.contains('pub-item') && next.style.display !== 'none') { hasVisible = true; break; } next = next.nextElementSibling; }
+    yearEl.style.display = hasVisible ? '' : 'none';
+  });
+}
+const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.style.opacity = '1'; e.target.style.transform = 'translateY(0)'; } }); }, { threshold: 0.08 });
+document.querySelectorAll('section').forEach(s => { s.style.opacity = '0'; s.style.transform = 'translateY(16px)'; s.style.transition = 'opacity 0.5s ease, transform 0.5s ease'; observer.observe(s); });
+</script>
+
+</body>
+</html>

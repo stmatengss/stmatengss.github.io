@@ -37,7 +37,7 @@ nav .nav-links a:hover { color: var(--accent); background: var(--tag-bg); }
 main { padding-top: 78px; }
 .hero { display: flex; gap: 44px; align-items: flex-start; padding: 44px 0 50px; }
 .hero-photo { flex-shrink: 0; width: 190px; height: 190px; border-radius: 50%; background: linear-gradient(135deg, #e0e7ff, #c7d2fe); display: flex; align-items: center; justify-content: center; font-size: 3.8rem; color: var(--accent); overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
-.hero-photo img { width: 100%; height: 100%; object-fit: cover; }
+.hero-photo img { width: 100%; height: 100%; object-fit: cover; transform: scale(1.6); transform-origin: 25% 10%; }
 .hero-info { flex: 1; }
 .hero-info h1 { font-size: 2.1rem; font-weight: 700; letter-spacing: -0.03em; line-height: 1.2; margin-bottom: 4px; }
 .hero-info .title { color: var(--text-secondary); font-size: 1.02rem; margin-bottom: 14px; }
@@ -96,6 +96,8 @@ section + section { border-top: 1px solid var(--border); }
 .talk-date { flex-shrink: 0; width: 90px; font-size: 0.8rem; color: var(--text-muted); font-weight: 500; }
 .talk-info { flex: 1; }
 .talk-title { font-weight: 600; font-size: 0.9rem; color: var(--text); }
+.talk-title a { color: inherit; text-decoration: none; }
+.talk-title a:hover, .talk-title a:focus-visible { color: var(--accent); text-decoration: underline; }
 .talk-event { font-size: 0.82rem; color: var(--text-secondary); }
 .timeline { position: relative; padding-left: 18px; }
 .timeline::before { content: ''; position: absolute; left: 3px; top: 8px; bottom: 8px; width: 2px; background: var(--border); }
@@ -155,12 +157,13 @@ footer { padding: 36px 0; border-top: 1px solid var(--border); text-align: cente
 
 <!-- Hero -->
 <section class="hero" id="about">
-  <div class="hero-photo"><span>TM</span></div>
+  <div class="hero-photo"><img src="images/teng-ma.jpg" alt="Teng Ma speaking at an event" width="661" height="661" fetchpriority="high"></div>
   <div class="hero-info">
     <h1>Teng Ma <span style="font-size:1.3rem;font-weight:400;color:var(--text-muted);">/ 马腾</span></h1>
     <p class="title">Staff Engineer &amp; Research Leader, Alibaba Apsara Lab</p>
     <p class="bio">
       I was born in Anhui, China. I am a Staff Engineer (P8) and Research Leader in the Operating System Lab (OSLab) MLSys group at <strong>Alibaba Cloud</strong>. I received my Ph.D. from <strong>Tsinghua University</strong> (advised by Prof. Yongwei Wu and Prof. Kang Chen, working closely with Dr. Mingxing Zhang and Prof. Xuehai Qian), with postdoctoral research at <strong>CASIA &amp; Alibaba</strong> (advised by Dr. Zhengyu He and Prof. Zhaoxiang Zhang). I spent half a year as a visiting student at Prof. Shan Lu's group at the <strong>University of Chicago</strong>. I build innovative software systems exploiting new hardware and kernel features in novel architectures such as memory disaggregation and LLM. I maintain and contribute to open-source projects including <a href="https://github.com/kvcache-ai/Mooncake" style="color:var(--accent)">Mooncake</a>, <a href="https://github.com/sgl-project/sglang" style="color:var(--accent)">SGLang</a>, <a href="https://github.com/ai-dynamo/dynamo" style="color:var(--accent)">Dynamo</a>, <a href="https://github.com/radixbio/rbg" style="color:var(--accent)">RBG</a>, and <a href="https://github.com/" style="color:var(--accent)">AIGW</a>.
+      I am also a member of <a href="https://github.com/lightseekorg/tokenspeed" style="color:var(--accent)">TokenSpeed</a> and the <a href="https://lightseek.org/" style="color:var(--accent)">LightSeek Foundation</a>.
     </p>
     <div class="hero-links">
       <a href="mailto:sima.mt@alibaba-inc.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75"/></svg>Email</a>
@@ -175,19 +178,21 @@ footer { padding: 36px 0; border-top: 1px solid var(--border); text-align: cente
 <section id="news">
   <h2 class="section-title">News</h2>
   <div class="stats-row">
-    <div class="stat-item"><div class="stat-num">50+</div><div class="stat-label">Publications</div></div>
+    <div class="stat-item"><div class="stat-num">51+</div><div class="stat-label">Publications</div></div>
     <div class="stat-item"><div class="stat-num">1,008</div><div class="stat-label">Citations</div></div>
     <div class="stat-item"><div class="stat-num">14</div><div class="stat-label">h-index</div></div>
     <div class="stat-item"><div class="stat-num">6,872</div><div class="stat-label">GitHub Stars</div></div>
   </div>
   <ul class="news-list" id="newsList">
+    <li class="news-item"><span class="news-date">2026.10</span><span class="news-content">New preprint: <a href="https://arxiv.org/abs/2610.38355"><strong>FlatCake</strong></a> &mdash; A Flat KVCache Storage Architecture for LLM Serving.</span></li>
+    <li class="news-item"><span class="news-date">2026.10</span><span class="news-content">Two talks at <a href="https://shenzhen2026.gosim.org/schedule/"><strong>GOSIM Shenzhen 2026</strong></a> on Mooncake for reinforcement learning and inference.</span></li>
     <li class="news-item"><span class="news-date">2026</span><span class="news-content">2 papers accepted at <a href="https://sigops.org/s/conferences/atc/2026/schedule.html"><strong>ATC 2026</strong></a>: Zswap Boost (Corresponding Author) and CacheFS.</span></li>
     <li class="news-item"><span class="news-date">2026</span><span class="news-content">Paper accepted at <strong>SIGCOMM 2026</strong>: Rethinking Transparent TCP Replacement (SMC-R in the Cloud).</span></li>
     <li class="news-item"><span class="news-date">2026</span><span class="news-content">Paper accepted at <strong>SC 2026</strong>: Mercury &mdash; User-Space API Remoting for Secure Containers (Corresponding Author).</span></li>
     <li class="news-item"><span class="news-date">2026.06</span><span class="news-content">New preprint: <strong>SAC</strong> &mdash; Disaggregated KV Cache System for Sparse Attention LLMs with CXL.</span></li>
     <li class="news-item"><span class="news-date">2026.06</span><span class="news-content">Paper accepted at <strong>IEEE Transactions on Computers</strong>: HybridSkipList+.</span></li>
     <li class="news-item"><span class="news-date">2026.05</span><span class="news-content">New preprint: <strong>DisagFusion</strong> &mdash; Asynchronous Pipeline Parallelism for Disaggregated Diffusion Serving.</span></li>
-    <li class="news-item"><span class="news-date">2026.06</span><span class="news-content">Invited talk at <strong>AICon Shanghai 2026</strong>: "记忆感知的大模型KVCache优化".</span></li>
+    <li class="news-item"><span class="news-date">2026.06</span><span class="news-content">Invited talk at <strong>AICon Shanghai 2026</strong>: <a href="https://aicon.infoq.cn/2026/shanghai/presentation/7064">记忆感知的大模型 KVCache 优化</a>.</span></li>
     <li class="news-item"><span class="news-date">2026.03</span><span class="news-content">Received <strong>OS2ATC Open Source Contribution Award</strong>.</span></li>
     <li class="news-item"><span class="news-date">2026</span><span class="news-content">3 papers at <strong>EuroSys 2026</strong>, 1 paper at <strong>VLDB 2026</strong>, 1 paper at <strong>ICDE 2026</strong>.</span></li>
     <li class="news-item"><span class="news-date">2025</span><span class="news-content">Mooncake approved as <a href="https://github.com/kvcache-ai/Mooncake">PyTorch Foundation</a> project.</span></li>
@@ -204,7 +209,7 @@ footer { padding: 36px 0; border-top: 1px solid var(--border); text-align: cente
 <section id="publications">
   <h2 class="section-title">Publications</h2>
   <p style="font-size:0.86rem;color:var(--text-muted);margin-bottom:18px;">
-    50+ papers at top systems venues: SIGCOMM, SC (2), SOSP (2), ASPLOS (2), ATC (6), EuroSys (2), VLDB (2), ICDE, TPDS (3), ToN, ToS, IEEE TC, DAC (2), CLUSTER (2), INFOCOM.
+    51+ papers at top systems venues: SIGCOMM, SC (2), SOSP (2), ASPLOS (2), ATC (6), EuroSys (2), VLDB (2), ICDE, TPDS (3), ToN, ToS, IEEE TC, DAC (2), CLUSTER (2), INFOCOM.
     <a href="https://scholar.google.com/citations?user=8zXo0KMAAAAJ&hl=en" style="color:var(--accent);font-weight:500;">Google Scholar</a>.
   </p>
   <div class="pub-filter">
@@ -217,6 +222,8 @@ footer { padding: 36px 0; border-top: 1px solid var(--border); text-align: cente
   <div id="pubList">
 
     <div class="pub-year">2026</div>
+
+    <div class="pub-item" data-tag="llm"><div class="pub-title">FlatCake: A Flat KVCache Storage Architecture for LLM Serving</div><div class="pub-authors">X Huang, <span class="me">T Ma</span>, Z Li, Y Zhao, Z Li, Q Zhu, W Yang, C Wang, T Xie, Y Zhuo</div><div class="pub-venue"><span class="venue-name">arXiv 2026</span></div><div class="pub-links"><a href="https://arxiv.org/abs/2610.38355" target="_blank" rel="noopener noreferrer">arXiv</a></div></div>
 
     <div class="pub-item" data-tag="kernel"><div class="pub-title">Zswap Boost: Accelerating Transparent Memory Compression in the Cloud</div><div class="pub-authors">Z Liu, <span class="me">T Ma*</span>, C Wei, N Zhang, X Liu, G Deng, S Cai, W Chen</div><div class="pub-venue"><span class="venue-name">ATC 2026</span> <span class="pub-badge first">Corresponding</span></div><div class="pub-links"><a href="https://sigops.org/s/conferences/atc/2026/schedule.html#session-9-title" target="_blank" rel="noopener noreferrer">Conference</a></div></div>
 
@@ -351,9 +358,21 @@ footer { padding: 36px 0; border-top: 1px solid var(--border); text-align: cente
     </div>
     <div class="project-card">
       <h3><a href="https://github.com/ai-dynamo/dynamo" target="_blank">Dynamo</a></h3>
-      <div class="project-role">Committer &middot; NVIDIA</div>
+      <div class="project-role">Contributor &middot; NVIDIA</div>
       <p>NVIDIA's inference framework. Transfer Engine integration for training-inference heterogeneous communication.</p>
       <div class="project-tags"><span>NVIDIA</span><span>Inference</span><span>Elastic EP</span></div>
+    </div>
+    <div class="project-card">
+      <h3><a href="https://github.com/lightseekorg/tokenspeed" target="_blank" rel="noopener noreferrer">TokenSpeed</a></h3>
+      <div class="project-role">Member</div>
+      <p>Open-source LLM inference engine developed within the LightSeek Foundation.</p>
+      <div class="project-tags"><span>LLM Inference</span><span>Open Source</span></div>
+    </div>
+    <div class="project-card">
+      <h3><a href="https://lightseek.org/" target="_blank" rel="noopener noreferrer">LightSeek Foundation</a></h3>
+      <div class="project-role">Member</div>
+      <p>Nonprofit foundation supporting open research and open-source AI infrastructure.</p>
+      <div class="project-tags"><span>Open Research</span><span>AI Infrastructure</span></div>
     </div>
     <div class="project-card">
       <h3><a href="https://github.com/" target="_blank">RBG &amp; AIGW</a></h3>
@@ -379,8 +398,11 @@ footer { padding: 36px 0; border-top: 1px solid var(--border); text-align: cente
 <!-- Talks -->
 <section id="talks">
   <h2 class="section-title">Talks &amp; Presentations</h2>
-  <div class="talk-item"><span class="talk-date">2026.06</span><div class="talk-info"><div class="talk-title">记忆感知的大模型KVCache优化</div><div class="talk-event">AICon 全球人工智能开发与应用大会 &middot; Shanghai</div></div></div>
+  <div class="talk-item"><span class="talk-date">2026.10.17</span><div class="talk-info"><div class="talk-title"><a href="https://shenzhen2026.gosim.org/zh/schedule/p-186-mooncake-store-for-agentic-rl-in-disaggregated-architectures/" target="_blank" rel="noopener noreferrer">Mooncake Store：解耦架构中面向智能体强化学习的KV存储</a></div><div class="talk-event">GOSIM Shenzhen 2026 &middot; KVCDN Workshop</div></div></div>
+  <div class="talk-item"><span class="talk-date">2026.10.16</span><div class="talk-info"><div class="talk-title"><a href="https://shenzhen2026.gosim.org/zh/schedule/ascend-mooncake-rl/" target="_blank" rel="noopener noreferrer">从 Rollout 到权重同步：Mooncake 如何支撑高性能强化学习和推理系统</a></div><div class="talk-event">GOSIM Shenzhen 2026 &middot; Agentic AI Infrastructure Forum</div></div></div>
+  <div class="talk-item"><span class="talk-date">2026.06</span><div class="talk-info"><div class="talk-title"><a href="https://aicon.infoq.cn/2026/shanghai/presentation/7064" target="_blank" rel="noopener noreferrer">记忆感知的大模型 KVCache 优化</a></div><div class="talk-event">AICon 全球人工智能开发与应用大会 &middot; Shanghai</div></div></div>
   <div class="talk-item"><span class="talk-date">2026.03</span><div class="talk-info"><div class="talk-title">圆桌主持：智算新生态 — 异构AI算力底座如何驱动大模型全场景落地</div><div class="talk-event">龙蜥 x SGLang 智算沙龙 (OpenAnolis x SGLang MeetUp) &middot; Shanghai</div></div></div>
+  <div class="talk-item"><span class="talk-date">2025.12</span><div class="talk-info"><div class="talk-title"><a href="https://aicon.infoq.cn/202512/beijing/presentation/6846" target="_blank" rel="noopener noreferrer">以 KVCache 为中心的云上 LLM 推理软件栈</a></div><div class="talk-event">AICon 全球人工智能开发与应用大会 &middot; Beijing</div></div></div>
   <div class="talk-item"><span class="talk-date">2025.10</span><div class="talk-info"><div class="talk-title">从同构走向分离的大模型推理系统</div><div class="talk-event">CNCC 2025 开源AI基础设施论坛</div></div></div>
   <div class="talk-item"><span class="talk-date">2025.08</span><div class="talk-info"><div class="talk-title">Mooncake：面向长上下文的KVCache中心化推理优化方案</div><div class="talk-event">AICon 全球人工智能开发与应用大会 &middot; Shenzhen</div></div></div>
   <div class="talk-item"><span class="talk-date">2025.08</span><div class="talk-info"><div class="talk-title">AI推理系统演进下的基础软件与开源生态</div><div class="talk-event">CCF 中国开源大会 &middot; Shanghai</div></div></div>
@@ -445,6 +467,7 @@ footer { padding: 36px 0; border-top: 1px solid var(--border); text-align: cente
 <section id="awards">
   <h2 class="section-title">Honors &amp; Awards</h2>
   <div class="awards-grid">
+    <div class="award-item"><span class="award-name">ACM ChinaSys Rising Star</span></div>
     <div class="award-item"><span class="award-name">OS2ATC Open Source Contribution Award</span><span class="award-year">2026</span></div>
     <div class="award-item"><span class="award-name">ChinaSys Best Poster (5/88)</span><span class="award-year">2024</span></div>
     <div class="award-item"><span class="award-name">CCF TCSS Outstanding Doctoral Dissertation</span><span class="award-year">2023</span></div>
@@ -486,7 +509,7 @@ footer { padding: 36px 0; border-top: 1px solid var(--border); text-align: cente
 </main>
 
 <footer>
-  <div class="container">&copy; 2026 Teng Ma. Last updated October 24, 2026.</div>
+  <div class="container">&copy; 2026 Teng Ma. Last updated November 2, 2026.</div>
 </footer>
 
 <script>
